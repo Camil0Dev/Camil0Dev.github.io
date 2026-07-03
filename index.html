@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camilo Moreno - Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <!-- Aquí luego pondrás tu foto o un avatar pixel art en la carpeta assets/images/ -->
+          <img src="./assets/images/my-avatar.png" alt="Camilo Moreno" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Camilo Moreno">Camilo Moreno</h1>
+
+          <p class="title">Desarrollador Junior Unity</p>
+
+          <!-- Botón de Descarga de CV -->
+          <a href="./assets/CV_Camilo_Moreno.pdf" download class="title" style="display: flex; width: max-content; margin: 12px auto 0 auto; align-items: center; gap: 8px; text-decoration: none; cursor: pointer;">
+            <ion-icon name="cloud-download-outline"></ion-icon>
+            Descargar CV
+          </a>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Mostrar Contactos</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:camilomoreno4283@hotmail.com" class="contact-link">camilomoreno4283@hotmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Teléfono</p>
+              <a href="tel:+573057324283" class="contact-link">+57 3057324283</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">GitHub</p>
+              <!-- Recuerda poner tu enlace real en el href -->
+              <a href="https://github.com/Camil0Dev" target="_blank" class="contact-link">github.com/Camil0Dev</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Ubicación</p>
+              <address>Bogotá, Colombia</address>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/camilo-moreno-unity-developer/" target="_blank" class="social-link">
+              <img src="./assets/images/LinkedIn.png" alt="LinkedIn" width="25">
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://camilomoreno.itch.io/" target="_blank" class="social-link">
+              <img src="./assets/images/itch3.svg" alt="itch.io" width="25">
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">Acerca de mí</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Soy estudiante de Ingeniería de Sistemas y actualmente me estoy formando como desarrollador de videojuegos a través del programa del SENA y Generation Colombia, con un enfoque principal en Unity y C#.
+          </p>
+          <p>
+            Me apasiona la programación porque disfruto analizar problemas, investigar diferentes soluciones y construir sistemas que den vida a experiencias interactivas. Uno de los aspectos que más me motiva del desarrollo de videojuegos es convertir una idea en una mecánica funcional y ver cómo, poco a poco, un proyecto comienza a tomar forma.
+          </p>
+          <p>
+            Actualmente estoy desarrollando proyectos personales y académicos para fortalecer mis habilidades en programación, arquitectura de videojuegos y desarrollo con Unity. Mi objetivo es seguir creciendo como Game Programmer, colaborar con equipos de desarrollo y contribuir a la creación de videojuegos que ofrezcan experiencias entretenidas y de calidad.
+          </p>
+        </section>
+
+        <!-- - service -->
+        <section class="service">
+
+          <h3 class="h3 service-title">Áreas de interés</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Mecánicas icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Programación de Mecánicas</h4>
+                <p class="service-item-text">
+                  Desarrollo de mecánicas de juego en C# utilizando Unity, incluyendo movimiento, combate e interacción entre sistemas.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/AI.png" alt="IA icon" width="45">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Inteligencia Artificial</h4>
+                <p class="service-item-text">
+                  Desarrollo de comportamientos básicos para enemigos mediante máquinas de estados, patrullaje y sistemas de detección en Unity.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="Level design icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Diseño de Niveles</h4>
+                <p class="service-item-text">
+                  Diseño de niveles utilizando Tilemaps de Unity, organizando escenarios funcionales para la exploración y la jugabilidad.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/Lupa.png" alt="Optimization icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Optimización y Debugging</h4>
+                <p class="service-item-text">
+                  Resolución de problemas mediante análisis, depuración de código y búsqueda de soluciones orientadas a mantener proyectos organizados y escalables.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Currículum</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Educación</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Generation Colombia</h4>
+              <span>2026 — Presente</span>
+              <p class="timeline-text">
+                Bootcamp Intensivo en Desarrollo de Videojuegos. Formación intensiva en desarrollo de software con énfasis en programación, metodologías ágiles, trabajo en equipo y habilidades profesionales.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">SENA</h4>
+              <span>10/2025 — Presente</span>
+              <p class="timeline-text">
+                Técnico en Desarrollo de Videojuegos. Formación en desarrollo de videojuegos utilizando Unity y C#, incluyendo programación de mecánicas, IA básica, diseño de niveles y desarrollo de interfaces.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">UNAD</h4>
+              <span>01/2025 — Presente</span>
+              <p class="timeline-text">
+                Ingeniería de Sistemas. Fundamentos en Programación Orientada a Objetos (POO), bases de datos y lógica algorítmica.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="game-controller-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experiencia en Proyectos</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Corazón del Saber (Proyecto Académico)</h4>
+              <span>11/2025 — Presente</span>
+              <p class="timeline-text">
+                <strong>Desarrollador Unity 2D / Programador C#</strong><br>
+                • Programé mecánicas base de jugador y gestión de cámara.<br>
+                • Desarrollé IA de enemigos base y sistema de combate.<br>
+                • Construí mapas y escenarios integrando Tilemaps nativos de Unity.<br>
+                • Desarrollo de interfaces de usuario adaptadas a la experiencia del jugador.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experiencia Laboral</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Analista de Datos</h4>
+              <span>02/2023 — Presente</span>
+              <p class="timeline-text">
+                <strong>Analista de Datos Freelance</strong><br>
+                • Desarrollé scripts en Python para automatizar y organizar arquitecturas de datos.<br>
+                • Realicé debugging en bases de datos asegurando alta calidad en la información.<br>
+                • Diseñé reportes interactivos en Power BI para beneficiar la toma de decisiones.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Habilidades Técnicas</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Unity & C#</h5>
+                <data value="65">65%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 65%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="60">60%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Aseprite (Pixel Art)</h5>
+                <data value="45">45%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 45%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Git & GitHub</h5>
+                <data value="60">60%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portafolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>Todos</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Proyectos Académicos</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Game Jams</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Selecciona categoría</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>Todos</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Proyectos Académicos</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Game Jams</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <!-- PROYECTO 1: CORAZÓN DEL SABER -->
+            <li class="project-item  active" data-filter-item data-category="proyectos académicos">
+              <!-- En el href puedes poner el link a tu repositorio de GitHub o tu página de itch.io -->
+              <a href="https://github.com/Camil0Dev/Corazon-Del-Saber" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="game-controller-outline"></ion-icon>
+                  </div>
+
+                  <!-- IMPORTANTE: Aquí debes guardar un GIF de tu juego en la carpeta assets/images/ con este nombre -->
+                  <img src="./assets/images/Cover.png" alt="Gameplay Corazón del Saber" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Corazón del Saber</h3>
+
+                <p class="project-category">Unity 2D / C#</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG / DEVLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">DevLog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <!-- POST 1 -->
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <!-- Aquí puedes poner un pantallazo de tu código o de Unity -->
+                  <img src="./assets/images/blog-1.jpg" alt="Tilemaps en Unity" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Diseño de Niveles</p>
+                    <span class="dot"></span>
+                    <!-- Cambia la fecha cuando lo publiques -->
+                    <time datetime="2026-07-01">Jul 01, 2026</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Construyendo mundos: Por qué elegí Tilemaps nativos en Unity</h3>
+
+                  <p class="blog-text">
+                    Un análisis técnico sobre la estructuración de escenarios en 2D, optimización del flujo de trabajo y mapeo directo en el motor.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <!-- POST 2 (Próximamente) -->
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="IA de Enemigos" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Programación C#</p>
+                    <span class="dot"></span>
+                    <time datetime="2026-07-15">Próximamente</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Máquinas de estado: Dando vida a la IA enemiga</h3>
+
+                  <p class="blog-text">
+                    Explorando la lógica detrás del patrullaje, la percepción y la toma de decisiones de los enemigos en un entorno 2D.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contacto</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <!-- Mapa actualizado a Bogotá, Colombia -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.51641075674!2d-74.24789531551003!3d4.648283716942054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1ses!2sco!4v1700000000000!5m2!1ses!2sco"
+              width="400" height="300" loading="lazy" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Envíame un mensaje</h3>
+
+          <!-- FormSubmit integrado apuntando a tu correo -->
+          <form action="https://formsubmit.co/camilomoreno4283@hotmail.com" method="POST" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="name" class="form-input" placeholder="Nombre completo" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Correo electrónico" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Tu mensaje" required data-form-input></textarea>
+
+            <!-- Configuración oculta de FormSubmit -->
+            <!-- Desactiva el captcha molesto -->
+            <input type="hidden" name="_captcha" value="false">
+            <!-- NOTA: Reemplaza este value con el enlace real de tu portafolio en GitHub Pages cuando lo subas -->
+            <input type="hidden" name="_next" value="https://tu-usuario.github.io/">
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Enviar Mensaje</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
