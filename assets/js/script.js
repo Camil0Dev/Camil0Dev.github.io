@@ -164,3 +164,41 @@ navigationLinks.forEach(link => {
   });
 
 });
+
+// ==========================
+// Funcionalidad Dinámica de Modales (Portafolio)
+// ==========================
+const openModalBtns = document.querySelectorAll('.open-modal-btn');
+const closeModalBtns = document.querySelectorAll('.close-modal-btn');
+
+// Abrir el modal correspondiente
+openModalBtns.forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault(); 
+    // Obtenemos el ID del modal que este botón debe abrir
+    const targetModalId = this.getAttribute('data-target');
+    const modal = document.getElementById(targetModalId);
+    
+    if(modal) {
+      modal.classList.add('active');
+    }
+  });
+});
+
+// Cerrar modales desde los botones X
+closeModalBtns.forEach(btn => {
+  btn.addEventListener('click', function() {
+    // Busca el contenedor padre que tenga la clase modal-container y lo cierra
+    const modal = this.closest('.modal-container');
+    if(modal) {
+      modal.classList.remove('active');
+    }
+  });
+});
+
+// Cerrar el modal al hacer clic afuera de la caja de contenido
+window.addEventListener('click', function(e) {
+  if (e.target.classList.contains('modal-container')) {
+    e.target.classList.remove('active');
+  }
+});

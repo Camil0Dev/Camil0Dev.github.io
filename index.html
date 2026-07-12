@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Camilo Moreno - Portfolio</title>
+  <title>Camilo Moreno - Portafolio</title>
 
   <!--
     - favicon
@@ -42,7 +42,6 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <!-- Aquí luego pondrás tu foto o un avatar pixel art en la carpeta assets/images/ -->
           <img src="./assets/images/my-avatar.png" alt="Camilo Moreno" width="80">
         </figure>
 
@@ -51,8 +50,8 @@
 
           <p class="title">Desarrollador Unity</p>
 
-          <!-- Botón de Descarga de CV -->
-          <a href="./assets/CV_Camilo_Moreno.pdf" download class="title" style="display: flex; width: max-content; margin: 12px auto 0 auto; align-items: center; gap: 8px; text-decoration: none; cursor: pointer;">
+          <!-- Botón de Descarga de CV centrado -->
+          <a href="./assets/CV.pdf" download class="title" style="margin: 12px auto 0 auto; display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; cursor: pointer; width: max-content;">
             <ion-icon name="cloud-download-outline"></ion-icon>
             Descargar CV
           </a>
@@ -97,8 +96,7 @@
             </div>
             <div class="contact-info">
               <p class="contact-title">GitHub</p>
-              <!-- Recuerda poner tu enlace real en el href -->
-              <a href="https://github.com/Camil0Dev" target="_blank" class="contact-link">github.com/Camil0Dev</a>
+              <a href="https://github.com/Camil0Dev" target="_blank" class="contact-link">https://github.com/Camil0Dev</a>
             </div>
           </li>
 
@@ -119,12 +117,12 @@
         <ul class="social-list">
           <li class="social-item">
             <a href="https://www.linkedin.com/in/camilo-moreno-unity-developer/" target="_blank" class="social-link">
-              <img src="./assets/images/linked.png" alt="linkedin" width="25">
+              <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
           <li class="social-item">
             <a href="https://camilomoreno.itch.io/" target="_blank" class="social-link">
-              <img src="./assets/images/itch3.svg" alt="itch.io" width="25">
+              <ion-icon name="game-controller-outline"></ion-icon>
             </a>
           </li>
         </ul>
@@ -132,10 +130,6 @@
       </div>
 
     </aside>
-
-
-
-
 
     <!--
       - #main-content
@@ -152,7 +146,7 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link active" data-nav-link>About</button>
           </li>
 
           <li class="navbar-item">
@@ -175,15 +169,11 @@
 
       </nav>
 
-
-
-
-
       <!--
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+      <article class="about active" data-page="about">
 
         <header>
           <h2 class="h2 article-title">Acerca de mí</h2>
@@ -201,7 +191,6 @@
           </p>
         </section>
 
-        <!-- - service -->
         <section class="service">
 
           <h3 class="h3 service-title">Áreas de interés</h3>
@@ -262,14 +251,6 @@
 
       </article>
 
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
       <!--
         - #RESUME
       -->
@@ -296,7 +277,7 @@
               <h4 class="h4 timeline-item-title">Generation Colombia</h4>
               <span>2026 — Presente</span>
               <p class="timeline-text">
-                Bootcamp Intensivo en Desarrollo de Videojuegos. Formación intensiva en desarrollo de software con énfasis en programación, metodologías ágiles, trabajo en equipo y habilidades profesionales.
+                Bootcamp Intensivo en Desarrollo de Software. Capacitación técnica orientada a metodologías ágiles y resolución de problemas.
               </p>
             </li>
 
@@ -304,7 +285,7 @@
               <h4 class="h4 timeline-item-title">SENA</h4>
               <span>10/2025 — Presente</span>
               <p class="timeline-text">
-                Técnico en Desarrollo de Videojuegos. Formación en desarrollo de videojuegos utilizando Unity y C#, incluyendo programación de mecánicas, IA básica, diseño de niveles y desarrollo de interfaces.
+                Técnico en Desarrollo de Videojuegos. Formación enfocada en programación C#, diseño de mecánicas e Inteligencia Artificial en Unity.
               </p>
             </li>
 
@@ -340,7 +321,7 @@
                 • Programé mecánicas base de jugador y gestión de cámara.<br>
                 • Desarrollé IA de enemigos base y sistema de combate.<br>
                 • Construí mapas y escenarios integrando Tilemaps nativos de Unity.<br>
-                • Desarrollo de interfaces de usuario adaptadas a la experiencia del jugador.
+                • Diseñé UI dinámica optimizando el espacio en pantalla.
               </p>
             </li>
 
@@ -364,7 +345,7 @@
               <h4 class="h4 timeline-item-title">Analista de Datos</h4>
               <span>02/2023 — Presente</span>
               <p class="timeline-text">
-                <strong>Analista de Datos Freelance</strong><br>
+                <strong>Freelance Remoto</strong><br>
                 • Desarrollé scripts en Python para automatizar y organizar arquitecturas de datos.<br>
                 • Realicé debugging en bases de datos asegurando alta calidad en la información.<br>
                 • Diseñé reportes interactivos en Power BI para beneficiar la toma de decisiones.
@@ -377,47 +358,47 @@
 
         <section class="skill">
 
-          <h3 class="h3 skills-title">Habilidades Técnicas</h3>
+          <h3 class="h3 skills-title">Habilidades</h3>
 
           <ul class="skills-list content-card">
 
             <li class="skills-item">
               <div class="title-wrapper">
-                <h5 class="h5">Unity & C#</h5>
-                <data value="65">65%</data>
+                <h5 class="h5">Unity</h5>
+                <data value="85">85%</data>
               </div>
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 65%;"></div>
+                <div class="skill-progress-fill" style="width: 85%;"></div>
               </div>
             </li>
 
             <li class="skills-item">
               <div class="title-wrapper">
-                <h5 class="h5">Python</h5>
-                <data value="60">60%</data>
+                <h5 class="h5">C#</h5>
+                <data value="85">85%</data>
               </div>
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 60%;"></div>
+                <div class="skill-progress-fill" style="width: 85%;"></div>
               </div>
             </li>
 
             <li class="skills-item">
               <div class="title-wrapper">
-                <h5 class="h5">Aseprite (Pixel Art)</h5>
-                <data value="45">45%</data>
+                <h5 class="h5">Resolución de Problemas</h5>
+                <data value="90">90%</data>
               </div>
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 45%;"></div>
+                <div class="skill-progress-fill" style="width: 90%;"></div>
               </div>
             </li>
 
             <li class="skills-item">
               <div class="title-wrapper">
-                <h5 class="h5">Git & GitHub</h5>
-                <data value="60">60%</data>
+                <h5 class="h5">Trabajo en Equipo</h5>
+                <data value="95">95%</data>
               </div>
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 60%;"></div>
+                <div class="skill-progress-fill" style="width: 95%;"></div>
               </div>
             </li>
 
@@ -426,10 +407,6 @@
         </section>
 
       </article>
-
-
-
-
 
       <!--
         - #PORTFOLIO
@@ -492,24 +469,57 @@
           <ul class="project-list">
 
             <!-- PROYECTO 1: CORAZÓN DEL SABER -->
-            <li class="project-item  active" data-filter-item data-category="proyectos académicos">
-              <!-- En el href puedes poner el link a tu repositorio de GitHub o tu página de itch.io -->
-              <a href="https://github.com/Camil0Dev/Corazon-Del-Saber" target="_blank">
+            <li class="project-item active" data-filter-item data-category="proyectos académicos">
+              
+              <figure class="project-img">
+                <div class="project-item-icon-box" style="display: flex; gap: 15px; justify-content: center;">
+                  
+                  <!-- Botón 1: Enlace a GitHub -->
+                  <a href="https://github.com/tu-usuario/corazon-del-saber" target="_blank" title="Ver Repositorio" style="color: var(--orange-yellow-crayola); font-size: 25px;">
+                    <ion-icon name="logo-github" title="Ver proyecto en GitHub"></ion-icon>
+                  </a>
+                  
+                  <!-- Botón 2: Abrir Detalles (Modal) -->
+                  <!-- ¡AQUÍ ESTÁ LA MAGIA! Agregamos data-target="modal-corazon" -->
+                  <button class="open-modal-btn" data-target="modal-corazon" title="Ver Detalles" style="background: none; border: none; color: var(--orange-yellow-crayola); font-size: 28px; cursor: pointer;">
+                    <ion-icon name="information-circle-outline" title="Informacion del Proyecto"></ion-icon>
+                  </button>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="game-controller-outline"></ion-icon>
-                  </div>
+                </div>
 
-                  <!-- IMPORTANTE: Aquí debes guardar un GIF de tu juego en la carpeta assets/images/ con este nombre -->
-                  <img src="./assets/images/Cover.png" alt="Gameplay Corazón del Saber" loading="lazy">
-                </figure>
+                <img src="./assets/images/Cover.png" alt="Gameplay Corazón del Saber" loading="lazy">
+              </figure>
 
-                <h3 class="project-title">Corazón del Saber</h3>
+              <h3 class="project-title">Corazón del Saber</h3>
+              <p class="project-category">Unity 2D / C#</p>
 
-                <p class="project-category">Unity 2D / C#</p>
+            </li>
 
-              </a>
+            <!-- PROYECTO 2: DRUNK DRIVER -->
+            <li class="project-item active" data-filter-item data-category="game jams">
+              
+              <figure class="project-img">
+                <div class="project-item-icon-box" style="display: flex; gap: 15px; justify-content: center;">
+                  
+                  <!-- Botón 1: Enlace a GitHub -->
+                  <a href="https://github.com/MarianoMushy/Drunk-Driver" target="_blank" title="Ver Repositorio" style="color: var(--orange-yellow-crayola); font-size: 25px;">
+                    <ion-icon name="logo-github" title="Ver proyecto en GitHub"></ion-icon>
+                  </a>
+                  
+                  <!-- Botón 2: Abrir Detalles (Modal) -->
+                  <!-- Usamos data-target para conectarlo con su modal específico -->
+                  <button class="open-modal-btn" data-target="modal-drunk" title="Ver Detalles" style="background: none; border: none; color: var(--orange-yellow-crayola); font-size: 28px; cursor: pointer;">
+                    <ion-icon name="information-circle-outline" title="Informacion del Proyecto"></ion-icon>
+                  </button>
+
+                </div>
+
+                <img src="./assets/images/DrunkCover.png" alt="Gameplay Drunk Driver" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">Drunk Driver</h3>
+              <p class="project-category">Game Jam / Unity 3D</p>
+
             </li>
 
           </ul>
@@ -517,10 +527,6 @@
         </section>
 
       </article>
-
-
-
-
 
       <!--
         - #BLOG / DEVLOG
@@ -541,7 +547,6 @@
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <!-- Aquí puedes poner un pantallazo de tu código o de Unity -->
                   <img src="./assets/images/blog-1.jpg" alt="Tilemaps en Unity" loading="lazy">
                 </figure>
 
@@ -550,7 +555,6 @@
                   <div class="blog-meta">
                     <p class="blog-category">Diseño de Niveles</p>
                     <span class="dot"></span>
-                    <!-- Cambia la fecha cuando lo publiques -->
                     <time datetime="2026-07-01">Jul 01, 2026</time>
                   </div>
 
@@ -598,10 +602,6 @@
 
       </article>
 
-
-
-
-
       <!--
         - #CONTACT
       -->
@@ -637,9 +637,7 @@
             <textarea name="message" class="form-input" placeholder="Tu mensaje" required data-form-input></textarea>
 
             <!-- Configuración oculta de FormSubmit -->
-            <!-- Desactiva el captcha molesto -->
             <input type="hidden" name="_captcha" value="false">
-            <!-- NOTA: Reemplaza este value con el enlace real de tu portafolio en GitHub Pages cuando lo subas -->
             <input type="hidden" name="_next" value="https://tu-usuario.github.io/">
 
             <button class="form-btn" type="submit" disabled data-form-btn>
@@ -653,8 +651,68 @@
 
       </article>
 
+    </div>
 
+    <!-- MODAL CORAZÓN DEL SABER -->
+    <div class="modal-container" id="modal-corazon">
+      <div class="modal-content">
+        
+        <button class="close-modal-btn">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
 
+        <h3 class="h3 modal-title">Corazón del Saber</h3>
+        <p style="color: var(--light-gray); margin-bottom: 20px; font-size: var(--fs-6);">
+          <strong>Rol:</strong> Desarrollador Unity 2D / Programador C#<br>
+          <strong>Género:</strong> 2D Metroidvania
+        </p>
+
+        <div class="modal-text" style="color: var(--light-gray-70); font-size: var(--fs-6); line-height: 1.6;">
+          <p style="margin-bottom: 15px;">
+            Proyecto enfocado en la construcción de sistemas robustos y mecánicas fluidas inspiradas en clásicos como <em>Blasphemous</em> o <em>Hollow Knight</em>.
+          </p>
+          <ul style="list-style-type: disc; margin-left: 20px; margin-bottom: 15px;">
+            <li><strong>Controlador de Jugador:</strong> Programación de físicas en C# para lograr movimiento preciso, sistema de salto y mecánica de <em>dash</em>.</li>
+            <li><strong>Inteligencia Artificial:</strong> Creación de módulos de IA para enemigos base y jefes, integrando sistemas de patrullaje, percepción y combate cuerpo a cuerpo mediante máquinas de estado.</li>
+            <li><strong>Arquitectura de Niveles:</strong> Diseño y construcción de escenarios directamente en el motor utilizando el sistema nativo de <em>Tilemaps</em>.</li>
+            <li><strong>Gestión de UI:</strong> Interfaz dinámica optimizada para reflejar salud en tiempo real sin sacrificar rendimiento.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- MODAL DRUNK DRIVER -->
+    <div class="modal-container" id="modal-drunk">
+      <div class="modal-content">
+        
+        <button class="close-modal-btn">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <h3 class="h3 modal-title">Drunk Driver</h3>
+        <p style="color: var(--light-gray); margin-bottom: 20px; font-size: var(--fs-6);">
+          <strong>Rol:</strong> Gameplay Programmer<br>
+          <strong>Evento:</strong> Generation Colombia Game Jam (50 hrs)<br>
+          <strong>Género:</strong> Top-Down Arcade
+        </p>
+
+        <div class="modal-text" style="color: var(--light-gray-70); font-size: var(--fs-6); line-height: 1.6;">
+          <p style="margin-bottom: 15px;">
+            Producto Mínimo Viable (MVP) desarrollado en un lapso de 50 horas. Un juego <em>High Score Chaser</em> de conducción caótica y destrucción.
+          </p>
+          <ul style="list-style-type: disc; margin-left: 20px; margin-bottom: 15px;">
+            <li><strong>IA de Tráfico y Navegación:</strong> Creación de un sistema escalable de patrullaje usando Waypoints y Raycasts para detección de obstáculos, prescindiendo de NavMesh para optimizar rendimiento.</li>
+            <li><strong>Sistemas Desacoplados de Spawners:</strong> Lógica de generación procedural y respawn automático mediante la vigilancia de referencias de memoria (null-checking) para objetos destructibles y vehículos.</li>
+            <li><strong>Interacciones Físicas:</strong> Transición dinámica de animación a físicas de <em>Ragdoll</em> tras detección de impacto con NPCs.</li>
+            <li><strong>Arquitectura Modular:</strong> Uso de variables expuestas e independencia de scripts para facilitar la labor de ensamblaje por parte del equipo de Level Design.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
 
   <!--
     - custom js link
