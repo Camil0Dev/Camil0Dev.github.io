@@ -25,7 +25,7 @@ const translations = {
     // Inicio
     inicio_title: 'Bienvenido',
     inicio_text1: 'Desarrollo experiencias interactivas donde la lógica y las mecánicas de juego se conectan de forma natural. Me apasiona transformar ideas complejas en controles fluidos y precisos para el jugador. Formándome como Unity Developer con Generation Colombia, me enfoco en la programación de gameplay (C#), en dar vida a los personajes mediante inteligencia artificial y en escribir código estructurado que me permita adaptarme a cualquier reto de desarrollo.',
-    inicio_text2: '', // Lo dejamos vacío porque ya no se usa en el HTML
+    inicio_text2: '',
     inicio_destacado_titulo: 'Último proyecto',
     inicio_corazon_estado: 'En desarrollo',
     inicio_corazon_fecha: '2025 - Presente',
