@@ -186,12 +186,20 @@
               <button
                 class="navbar-link active"
                 data-nav-link
+                data-page-target="inicio"
+              >
+                <span data-i18n="nav_inicio">Inicio</span>
+              </button>
+            </li>
+            <li class="navbar-item">
+              <button
+                class="navbar-link"
+                data-nav-link
                 data-page-target="about"
               >
                 <span data-i18n="nav_about">Sobre mí</span>
               </button>
             </li>
-
             <li class="navbar-item">
               <button
                 class="navbar-link"
@@ -201,7 +209,6 @@
                 <span data-i18n="nav_resume">Currículum</span>
               </button>
             </li>
-
             <li class="navbar-item">
               <button
                 class="navbar-link"
@@ -211,13 +218,6 @@
                 <span data-i18n="nav_portfolio">Portafolio</span>
               </button>
             </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link data-page-target="blog">
-                <span data-i18n="nav_blog">Blog</span>
-              </button>
-            </li>
-
             <li class="navbar-item">
               <button
                 class="navbar-link"
@@ -231,10 +231,42 @@
         </nav>
 
         <!--
+        - #INICIO
+      -->
+
+        <article class="inicio active" data-page="inicio">
+  <header>
+    <h2 class="h2 article-title" data-i18n="inicio_title">Bienvenido</h2>
+  </header>
+
+  <section class="inicio-content">
+    <div class="inicio-text">
+      <p data-i18n-html="inicio_text1">
+        Desarrollo experiencias interactivas donde la lógica y las mecánicas de juego se conectan de forma natural. Me apasiona transformar ideas complejas en controles fluidos y precisos para el jugador. Formándome como Unity Developer con Generation Colombia, me enfoco en la programación de gameplay (C#), en dar vida a los personajes mediante inteligencia artificial y en escribir código estructurado que me permita adaptarme a cualquier reto de desarrollo.
+      </p>
+    </div>
+    <div class="inicio-destacado">
+      <h3 class="h4" data-i18n="inicio_destacado_titulo">Último proyecto</h3>
+      <div class="destacado-card">
+        <figure class="destacado-img">
+          <img src="./assets/images/Cover.png" alt="Corazón del Saber" loading="lazy" />
+        </figure>
+        <div class="destacado-info">
+          <h4 class="h4" data-i18n="project_corazon_title">Corazón del Saber</h4>
+          <p class="destacado-estado" data-i18n="inicio_corazon_estado">En desarrollo</p>
+          <p class="destacado-fecha" data-i18n="inicio_corazon_fecha">2025 - Presente</p>
+          <a href="#portfolio" class="destacado-link" data-i18n="inicio_ver_proyecto">Ver proyecto →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</article>
+
+        <!--
         - #ABOUT
       -->
 
-        <article class="about active" data-page="about">
+        <article class="about" data-page="about">
           <header>
             <h2 class="h2 article-title" data-i18n="about_title">
               Acerca de mí
@@ -721,90 +753,6 @@
         </article>
 
         <!--
-        - #BLOG / DEVLOG
-      -->
-
-        <article class="blog" data-page="blog">
-          <header>
-            <h2 class="h2 article-title" data-i18n="blog_title">DevLog</h2>
-          </header>
-
-          <section class="blog-posts">
-            <ul class="blog-posts-list">
-              <!-- POST 1 -->
-              <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/blog-1.jpg"
-                      alt="Tilemaps en Unity"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category" data-i18n="blog_post1_cat">
-                        Diseño de Niveles
-                      </p>
-                      <span class="dot"></span>
-                      <time datetime="2026-07-01" data-i18n="blog_post1_date"
-                        >Jul 01, 2026</time
-                      >
-                    </div>
-
-                    <h3 class="h3 blog-item-title" data-i18n="blog_post1_title">
-                      Construyendo mundos: Por qué elegí Tilemaps nativos en
-                      Unity
-                    </h3>
-
-                    <p class="blog-text" data-i18n="blog_post1_text">
-                      Un análisis técnico sobre la estructuración de escenarios
-                      en 2D, optimización del flujo de trabajo y mapeo directo
-                      en el motor.
-                    </p>
-                  </div>
-                </a>
-              </li>
-
-              <!-- POST 2 (Próximamente) -->
-              <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/blog-2.jpg"
-                      alt="IA de Enemigos"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category" data-i18n="blog_post2_cat">
-                        Programación C#
-                      </p>
-                      <span class="dot"></span>
-                      <time datetime="2026-07-15" data-i18n="blog_post2_date"
-                        >Próximamente</time
-                      >
-                    </div>
-
-                    <h3 class="h3 blog-item-title" data-i18n="blog_post2_title">
-                      Máquinas de estado: Dando vida a la IA enemiga
-                    </h3>
-
-                    <p class="blog-text" data-i18n="blog_post2_text">
-                      Explorando la lógica detrás del patrullaje, la percepción
-                      y la toma de decisiones de los enemigos en un entorno 2D.
-                    </p>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </section>
-        </article>
-
-        <!--
         - #CONTACT
       -->
 
@@ -923,8 +871,10 @@
               line-height: 1.6;
             "
           >
-            <p style="margin-bottom: 15px;" data-i18n-html="modal_corazon_text">
-  Proyecto enfocado en la construcción de sistemas robustos y mecánicas fluidas inspiradas en clásicos como <em>Blasphemous</em> o <em>Hollow Knight</em>.
+            <p style="margin-bottom: 15px" data-i18n-html="modal_corazon_text">
+              Proyecto enfocado en la construcción de sistemas robustos y
+              mecánicas fluidas inspiradas en clásicos como
+              <em>Blasphemous</em> o <em>Hollow Knight</em>.
             </p>
             <ul
               style="

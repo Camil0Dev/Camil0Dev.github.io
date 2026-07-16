@@ -17,11 +17,19 @@ const translations = {
     contact_location: 'Ubicación',
     location_address: 'Bogotá, Colombia',
     // Navbar
+    nav_inicio: 'Inicio',
     nav_about: 'Sobre mí',
     nav_resume: 'Currículum',
     nav_portfolio: 'Portafolio',
-    nav_blog: 'Blog',
     nav_contact: 'Contacto',
+    // Inicio
+    inicio_title: 'Bienvenido',
+    inicio_text1: 'Desarrollo experiencias interactivas donde la lógica y las mecánicas de juego se conectan de forma natural. Me apasiona transformar ideas complejas en controles fluidos y precisos para el jugador. Formándome como Unity Developer con Generation Colombia, me enfoco en la programación de gameplay (C#), en dar vida a los personajes mediante inteligencia artificial y en escribir código estructurado que me permita adaptarme a cualquier reto de desarrollo.',
+    inicio_text2: '', // Lo dejamos vacío porque ya no se usa en el HTML
+    inicio_destacado_titulo: 'Último proyecto',
+    inicio_corazon_estado: 'En desarrollo',
+    inicio_corazon_fecha: '2025 - Presente',
+    inicio_ver_proyecto: 'Ver proyecto →',
     // About
     about_title: 'Acerca de mí',
     about_p1: 'Soy estudiante de Ingeniería de Sistemas y actualmente me estoy formando como desarrollador de videojuegos a través del programa del SENA y Generation Colombia, con un enfoque principal en Unity y C#.',
@@ -66,16 +74,6 @@ const translations = {
     project_corazon_cat: 'Unity 2D / C#',
     project_drunk_title: 'Drunk Driver',
     project_drunk_cat: 'Game Jam / Unity 3D',
-    // Blog
-    blog_title: 'DevLog',
-    blog_post1_cat: 'Diseño de Niveles',
-    blog_post1_date: 'Jul 01, 2026',
-    blog_post1_title: 'Construyendo mundos: Por qué elegí Tilemaps nativos en Unity',
-    blog_post1_text: 'Un análisis técnico sobre la estructuración de escenarios en 2D, optimización del flujo de trabajo y mapeo directo en el motor.',
-    blog_post2_cat: 'Programación C#',
-    blog_post2_date: 'Próximamente',
-    blog_post2_title: 'Máquinas de estado: Dando vida a la IA enemiga',
-    blog_post2_text: 'Explorando la lógica detrás del patrullaje, la percepción y la toma de decisiones de los enemigos en un entorno 2D.',
     // Contact
     contact_title: 'Contacto',
     contact_form_title: 'Envíame un mensaje',
@@ -116,11 +114,19 @@ const translations = {
     contact_location: 'Location',
     location_address: 'Bogotá, Colombia',
     // Navbar
+    nav_inicio: 'Home',
     nav_about: 'About',
     nav_resume: 'Resume',
     nav_portfolio: 'Portfolio',
-    nav_blog: 'Blog',
     nav_contact: 'Contact',
+    // Inicio
+    inicio_title: 'Welcome',
+    inicio_text1: 'I develop interactive experiences where logic and game mechanics connect naturally. I\'m passionate about turning complex ideas into fluid and precise controls for the player. Training as a Unity Developer with Generation Colombia, I focus on gameplay programming (C#), bringing characters to life through artificial intelligence, and writing structured code that allows me to adapt to any development challenge.',
+    inicio_text2: '',
+    inicio_destacado_titulo: 'Latest project',
+    inicio_corazon_estado: 'In development',
+    inicio_corazon_fecha: '2025 - Present',
+    inicio_ver_proyecto: 'View project →',
     // About
     about_title: 'About Me',
     about_p1: 'I am a Systems Engineering student currently training as a video game developer through SENA and Generation Colombia programs, with a primary focus on Unity and C#.',
@@ -165,16 +171,6 @@ const translations = {
     project_corazon_cat: 'Unity 2D / C#',
     project_drunk_title: 'Drunk Driver',
     project_drunk_cat: 'Game Jam / Unity 3D',
-    // Blog
-    blog_title: 'DevLog',
-    blog_post1_cat: 'Level Design',
-    blog_post1_date: 'Jul 01, 2026',
-    blog_post1_title: 'Building worlds: Why I chose native Tilemaps in Unity',
-    blog_post1_text: 'A technical analysis on structuring 2D scenarios, workflow optimization, and direct mapping in the engine.',
-    blog_post2_cat: 'C# Programming',
-    blog_post2_date: 'Coming Soon',
-    blog_post2_title: 'State Machines: Bringing enemy AI to life',
-    blog_post2_text: 'Exploring the logic behind patrol, perception, and decision-making of enemies in a 2D environment.',
     // Contact
     contact_title: 'Contact',
     contact_form_title: 'Send me a message',
@@ -229,7 +225,6 @@ function applyTranslations(lang) {
   // Atributos (placeholder, title, value, etc.)
   document.querySelectorAll('[data-i18n-attr]').forEach(el => {
     const attrData = el.getAttribute('data-i18n-attr');
-    // Formato: "atributo:clave"  ej. "placeholder:contact_name_placeholder"
     const [attr, key] = attrData.split(':');
     if (attr && key && translations[lang] && translations[lang][key]) {
       el.setAttribute(attr, translations[lang][key]);
@@ -264,16 +259,12 @@ if (langToggle) {
     currentLang = currentLang === 'es' ? 'en' : 'es';
     localStorage.setItem('preferredLang', currentLang);
     applyTranslations(currentLang);
-    // Después de cambiar el idioma, reaplicar el filtro actual si es necesario
-    // El filtro se mantiene porque los valores fijos no cambian.
-    // Pero el texto del selectValue puede quedar desactualizado si se cambia el idioma mientras el select está abierto.
-    // Lo actualizamos con el texto del filtro activo.
+    // Actualizar el selectValue con el filtro activo
     const activeFilterBtn = document.querySelector('.filter-item button.active');
     if (activeFilterBtn) {
       const filterValue = activeFilterBtn.dataset.filterValue;
       const selectValue = document.querySelector('[data-selecct-value]');
       if (selectValue) {
-        // Buscar el texto correspondiente en las traducciones
         const key = filterValue === 'all' ? 'filter_all' : (filterValue === 'academic' ? 'filter_academic' : 'filter_jam');
         if (translations[currentLang] && translations[currentLang][key]) {
           selectValue.textContent = translations[currentLang][key];
@@ -336,16 +327,12 @@ if (select) {
 selectItems.forEach(item => {
   item.addEventListener("click", function () {
     const value = this.dataset.selectValue || "all";
-
-    // Actualizar el texto visible del select con el texto del botón seleccionado (ya traducido)
     if (selectValue) {
       selectValue.textContent = this.textContent;
     }
-
     if (select) {
       elementToggleFunc(select);
     }
-
     filterProjects(value);
   });
 });
@@ -355,31 +342,24 @@ let lastFilterBtn = filterBtns.length > 0 ? filterBtns[0] : null;
 filterBtns.forEach(button => {
   button.addEventListener("click", function () {
     const value = this.dataset.filterValue || "all";
-
-    // Actualizar el texto del selectValue con el texto del botón (traducido)
     if (selectValue) {
       selectValue.textContent = this.textContent;
     }
-
     filterProjects(value);
-
     if (lastFilterBtn) {
       lastFilterBtn.classList.remove("active");
     }
-
     this.classList.add("active");
     lastFilterBtn = this;
   });
 });
 
-// Al cambiar de idioma, asegurar que el selectValue muestre el texto correcto del filtro activo
 function updateSelectValueFromActiveFilter() {
   const activeFilterBtn = document.querySelector('.filter-item button.active');
   if (activeFilterBtn && selectValue) {
     selectValue.textContent = activeFilterBtn.textContent;
   }
 }
-// Llamar después de aplicar traducciones (ya se hace en el evento del botón de idioma)
 
 /* ==========================
    Contact Form
@@ -390,21 +370,15 @@ const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
 
 if (form && formBtn) {
-
   formInputs.forEach(input => {
-
     input.addEventListener("input", () => {
-
       if (form.checkValidity()) {
         formBtn.removeAttribute("disabled");
       } else {
         formBtn.setAttribute("disabled", "");
       }
-
     });
-
   });
-
 }
 
 /* ==========================
@@ -415,12 +389,8 @@ const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
 navigationLinks.forEach(link => {
-
   link.addEventListener("click", function () {
-
-    // Obtener el target desde el atributo data-page-target
     const pageName = this.dataset.pageTarget;
-
     if (!pageName) return;
 
     navigationLinks.forEach(nav => {
@@ -428,13 +398,11 @@ navigationLinks.forEach(link => {
     });
 
     pages.forEach(page => {
-
       if (page.dataset.page === pageName) {
         page.classList.add("active");
       } else {
         page.classList.remove("active");
       }
-
     });
 
     this.classList.add("active");
@@ -443,9 +411,7 @@ navigationLinks.forEach(link => {
       top: 0,
       behavior: "smooth"
     });
-
   });
-
 });
 
 // ==========================
@@ -454,20 +420,17 @@ navigationLinks.forEach(link => {
 const openModalBtns = document.querySelectorAll('.open-modal-btn');
 const closeModalBtns = document.querySelectorAll('.close-modal-btn');
 
-// Abrir el modal correspondiente
 openModalBtns.forEach(btn => {
   btn.addEventListener('click', function(e) {
     e.preventDefault(); 
     const targetModalId = this.getAttribute('data-target');
     const modal = document.getElementById(targetModalId);
-    
     if(modal) {
       modal.classList.add('active');
     }
   });
 });
 
-// Cerrar modales desde los botones X
 closeModalBtns.forEach(btn => {
   btn.addEventListener('click', function() {
     const modal = this.closest('.modal-container');
@@ -477,7 +440,6 @@ closeModalBtns.forEach(btn => {
   });
 });
 
-// Cerrar el modal al hacer clic afuera de la caja de contenido
 window.addEventListener('click', function(e) {
   if (e.target.classList.contains('modal-container')) {
     e.target.classList.remove('active');
