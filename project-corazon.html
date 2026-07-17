@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="page_title">Camilo Moreno - Corazón del Saber</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <!--
+      - SIDEBAR (idéntico al del index)
+      -->
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Camilo Moreno"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" data-i18n="name">Camilo Moreno</h1>
+            <p class="title" data-i18n="title">Desarrollador Unity</p>
+            <a
+              href="./assets/CV.pdf"
+              download
+              class="title"
+              style="
+                margin: 12px auto 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                text-decoration: none;
+                cursor: pointer;
+                width: max-content;
+              "
+            >
+              <ion-icon name="cloud-download-outline"></ion-icon>
+              <span data-i18n="download_cv">Descargar CV</span>
+            </a>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span data-i18n="show_contacts">Mostrar Contactos</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+
+          <button class="lang-toggle" id="langToggle" title="Cambiar idioma">
+            ES
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title" data-i18n="contact_email">Email</p>
+                <a
+                  href="mailto:camilomoreno4283@hotmail.com"
+                  class="contact-link"
+                  >camilomoreno4283@hotmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title" data-i18n="contact_phone">Teléfono</p>
+                <a href="tel:+573057324283" class="contact-link"
+                  >+57 3057324283</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="logo-github"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title" data-i18n="contact_github">GitHub</p>
+                <a
+                  href="https://github.com/Camil0Dev"
+                  target="_blank"
+                  class="contact-link"
+                  >https://github.com/Camil0Dev</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title" data-i18n="contact_location">
+                  Ubicación
+                </p>
+                <address data-i18n="location_address">Bogotá, Colombia</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/camilo-moreno-unity-developer/"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="https://camilomoreno.itch.io/"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="game-controller-outline"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - CONTENIDO PRINCIPAL
+      -->
+      <div class="main-content project-page-wrapper">
+        <!-- Botón volver -->
+        <div class="project-back">
+          <a href="index.html#portfolio" data-i18n="project_corazon_volver">
+            ← VOLVER AL PORTAFOLIO
+          </a>
+        </div>
+
+        <!-- HERO -->
+        <header class="project-hero">
+          <div class="hero-text">
+            <div class="hero-badges">
+              <span class="badge" data-i18n="project_corazon_badge_1"
+                >VIDEOJUEGO</span
+              >
+              <span class="badge" data-i18n="project_corazon_badge_2"
+                >PROYECTO ACADÉMICO</span
+              >
+            </div>
+            <h1 class="h1 project-title" data-i18n="project_corazon_title">
+              Corazón del Saber
+            </h1>
+            <p class="hero-subtitle" data-i18n="project_corazon_hero_subtitle">
+              Un Metroidvania 2D donde la precisión del control y el combate
+              estratégico son la clave para sobrevivir.
+            </p>
+          </div>
+
+          <!-- Video / Iframe placeholder -->
+          <div class="hero-video">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=Jq8sB"
+              title="YouTube video player"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </header>
+
+        <!-- METADATOS -->
+        <section class="project-meta-grid">
+          <div class="meta-item">
+            <span class="meta-label" data-i18n="project_corazon_meta_ano_label"
+              >AÑO</span
+            >
+            <span class="meta-value" data-i18n="project_corazon_meta_ano"
+              >2025</span
+            >
+          </div>
+          <div class="meta-item">
+            <span
+              class="meta-label"
+              data-i18n="project_corazon_meta_estado_label"
+              >ESTADO</span
+            >
+            <span class="meta-value" data-i18n="project_corazon_meta_estado"
+              >En Desarrollo</span
+            >
+          </div>
+          <div class="meta-item">
+            <span class="meta-label" data-i18n="project_corazon_meta_rol_label"
+              >MI ROL</span
+            >
+            <span class="meta-value" data-i18n="project_corazon_meta_rol"
+              >Programador C# y Desarrollador Unity 2D</span
+            >
+          </div>
+          <div class="meta-item">
+            <span
+              class="meta-label"
+              data-i18n="project_corazon_meta_contexto_label"
+              >CONTEXTO</span
+            >
+            <span class="meta-value" data-i18n="project_corazon_meta_contexto"
+              >Proyecto Académico (SENA)</span
+            >
+          </div>
+        </section>
+
+        <div class="project-divider"></div>
+
+        <!-- DESCRIPCIÓN -->
+        <section class="project-section">
+          <h2 class="h2 section-title" data-i18n="project_corazon_desc_titulo">
+            Descripción
+          </h2>
+          <p class="section-text" data-i18n="project_corazon_desc_p1">
+            Corazón del Saber es un Metroidvania 2D desarrollado como proyecto
+            académico, enfocado en ofrecer un sistema de físicas de jugador ágil
+            y un combate cuerpo a cuerpo desafiante. El proyecto destaca por la
+            construcción de sus entornos interactivos utilizando el sistema de
+            Tilemaps nativo de Unity.
+          </p>
+          <p class="section-text" data-i18n="project_corazon_desc_p2">
+            El jugador debe dominar mecánicas de movimiento como el salto y el
+            dash para sortear plataformas, mientras enfrenta enemigos
+            controlados por Inteligencia Artificial basada en máquinas de
+            estado.
+          </p>
+        </section>
+
+        <div class="project-divider"></div>
+
+        <!-- PROCESO DE DESARROLLO -->
+        <section class="project-section">
+          <h2
+            class="h2 section-title"
+            data-i18n="project_corazon_proceso_titulo"
+          >
+            Proceso de desarrollo
+          </h2>
+          <ol class="process-list">
+            <li>
+              <span class="process-number">01</span>
+              <span data-i18n="project_corazon_proceso_01"
+                >Mecánicas Base: Programación del controlador del jugador en C#,
+                ajustando físicas para lograr un dash y salto precisos y
+                responsivos.</span
+              >
+            </li>
+            <li>
+              <span class="process-number">02</span>
+              <span data-i18n="project_corazon_proceso_02"
+                >Inteligencia Artificial: Desarrollo de máquinas de estado para
+                los enemigos base y la estructuración lógica del sistema de
+                combate cuerpo a cuerpo.</span
+              >
+            </li>
+            <li>
+              <span class="process-number">03</span>
+              <span data-i18n="project_corazon_proceso_03"
+                >Diseño de Niveles: Construcción de los mapas y escenarios
+                directamente en el motor mediante Tilemaps.</span
+              >
+            </li>
+            <li>
+              <span class="process-number">04</span>
+              <span data-i18n="project_corazon_proceso_04"
+                >Interfaz Dinámica (UI): Implementación de los sistemas de salud
+                y energía, enfocados en optimizar el espacio en pantalla y dar
+                feedback claro al jugador.</span
+              >
+            </li>
+          </ol>
+        </section>
+
+        <div class="project-divider"></div>
+
+        <!-- DESAFÍOS Y APRENDIZAJES -->
+        <section class="project-section">
+          <h2
+            class="h2 section-title"
+            data-i18n="project_corazon_desafios_titulo"
+          >
+            Desafíos y aprendizajes
+          </h2>
+          <p class="section-text" data-i18n="project_corazon_desafios">
+            Durante el desarrollo de Corazón del Saber enfrenté el desafío de
+            crear un nivel tipo Metroidvania funcional utilizando Unity 6 en un
+            tiempo limitado, lo que me llevó a priorizar tareas, reutilizar
+            assets y apoyarme en herramientas de inteligencia artificial para
+            acelerar la conceptualización de escenarios sin comprometer la
+            implementación. El proyecto me permitió profundizar en el uso de
+            Tilemaps, Cinemachine, gestión de escenas, programación en C#,
+            diseño de niveles, sistemas de guardado, enemigos, objetos
+            interactivos y organización de un proyecto de mediana escala. Más
+            allá de los aspectos técnicos, aprendí la importancia de planificar
+            la arquitectura del juego desde el inicio, adaptarme a los
+            imprevistos, resolver problemas de forma iterativa y optimizar el
+            flujo de trabajo para cumplir con los objetivos del proyecto dentro
+            de los plazos establecidos.
+          </p>
+        </section>
+
+        <div class="project-divider"></div>
+
+        <!-- HERRAMIENTAS Y HABILIDADES -->
+        <section class="project-section project-tools-skills">
+          <div class="tools-col">
+            <h3 class="h3" data-i18n="project_corazon_herramientas_titulo">
+              Herramientas
+            </h3>
+            <ul class="badge-list">
+              <li class="badge">Unity</li>
+              <li class="badge">C#</li>
+              <li class="badge">Aseprite</li>
+              <li class="badge">Git</li>
+            </ul>
+          </div>
+          <div class="skills-col">
+            <h3 class="h3" data-i18n="project_corazon_habilidades_titulo">
+              Habilidades demostradas
+            </h3>
+            <ul class="badge-list">
+              <li class="badge">Gameplay Programming</li>
+              <li class="badge">IA (State Machines)</li>
+              <li class="badge">Level Design</li>
+              <li class="badge">Resolución de Problemas</li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="project-divider"></div>
+
+        <!-- GALERÍA -->
+        <section class="project-section">
+          <h2
+            class="h2 section-title"
+            data-i18n="project_corazon_galeria_titulo"
+          >
+            Galería
+          </h2>
+          <div class="gallery-grid">
+            <figure class="gallery-item">
+              <img
+                src="./assets/images/Cover.png"
+                alt="Captura 1"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="./assets/images/Cover.png"
+                alt="Captura 2"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="./assets/images/Cover.png"
+                alt="Captura 3"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="./assets/images/Cover.png"
+                alt="Captura 4"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <div class="project-divider"></div>
+
+        <!-- ENLACES -->
+        <section class="project-section project-links">
+          <h2
+            class="h2 section-title"
+            data-i18n="project_corazon_enlaces_titulo"
+          >
+            Enlaces
+          </h2>
+          <div class="link-buttons">
+            <a
+              href="https://github.com/Camil0Dev/Corazon-Del-Saber"
+              target="_blank"
+              class="btn-outline"
+              data-i18n="project_corazon_ver_github"
+              >VER EN GITHUB</a
+            >
+            <a
+              href="./assets/GDD1.pdf"
+              download
+              class="btn-outline"
+              data-i18n="project_corazon_ver_gdd"
+              >VER GDD</a
+            >
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!--
+    - scripts
+  -->
+    <script src="./assets/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

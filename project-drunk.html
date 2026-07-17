@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="page_title">Camilo Moreno - Drunk Driver</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <!--
+      - SIDEBAR (idéntico al del index)
+      -->
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Camilo Moreno"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" data-i18n="name">Camilo Moreno</h1>
+            <p class="title" data-i18n="title">Desarrollador Unity</p>
+            <a
+              href="./assets/CV.pdf"
+              download
+              class="title"
+              style="
+                margin: 12px auto 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                text-decoration: none;
+                cursor: pointer;
+                width: max-content;
+              "
+            >
+              <ion-icon name="cloud-download-outline"></ion-icon>
+              <span data-i18n="download_cv">Descargar CV</span>
+            </a>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span data-i18n="show_contacts">Mostrar Contactos</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+
+          <button class="lang-toggle" id="langToggle" title="Cambiar idioma">
+            ES
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title" data-i18n="contact_email">Email</p>
+                <a
+                  href="mailto:camilomoreno4283@hotmail.com"
+                  class="contact-link"
+                  >camilomoreno4283@hotmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title" data-i18n="contact_phone">Teléfono</p>
+                <a href="tel:+573057324283" class="contact-link"
+                  >+57 3057324283</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="logo-github"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title" data-i18n="contact_github">GitHub</p>
+                <a
+                  href="https://github.com/Camil0Dev"
+                  target="_blank"
+                  class="contact-link"
+                  >https://github.com/Camil0Dev</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title" data-i18n="contact_location">
+                  Ubicación
+                </p>
+                <address data-i18n="location_address">Bogotá, Colombia</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/camilo-moreno-unity-developer/"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="https://camilomoreno.itch.io/"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="game-controller-outline"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - CONTENIDO PRINCIPAL
+      -->
+      <div class="main-content project-page-wrapper">
+        <!-- Botón volver -->
+        <div class="project-back">
+          <a href="index.html#portfolio" data-i18n="project_drunk_volver">
+            ← VOLVER AL PORTAFOLIO
+          </a>
+        </div>
+
+        <!-- HERO -->
+        <header class="project-hero">
+          <div class="hero-text">
+            <div class="hero-badges">
+              <span class="badge" data-i18n="project_drunk_badge_1">VIDEOJUEGO</span>
+              <span class="badge" data-i18n="project_drunk_badge_2">GAME JAM</span>
+            </div>
+            <h1 class="h1 project-title" data-i18n="project_drunk_title">
+              Drunk Driver
+            </h1>
+            <p class="hero-subtitle" data-i18n="project_drunk_hero_subtitle">
+              Un título Arcade Top-Down de supervivencia y destrucción donde el
+              alcohol es tu combustible y tu peor enemigo.
+            </p>
+          </div>
+
+          <!-- Video / Iframe placeholder -->
+          <div class="hero-video">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=Jq8sB"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </header>
+
+        <!-- METADATOS -->
+        <section class="project-meta-grid">
+          <div class="meta-item">
+            <span class="meta-label" data-i18n="project_drunk_meta_ano_label">AÑO</span>
+            <span class="meta-value" data-i18n="project_drunk_meta_ano">2026</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label" data-i18n="project_drunk_meta_estado_label">ESTADO</span>
+            <span class="meta-value" data-i18n="project_drunk_meta_estado">Finalizado (Desarrollado en 50 horas)</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label" data-i18n="project_drunk_meta_rol_label">MI ROL</span>
+            <span class="meta-value" data-i18n="project_drunk_meta_rol">Programador de Jugabilidad (C#)</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label" data-i18n="project_drunk_meta_contexto_label">CONTEXTO</span>
+            <span class="meta-value" data-i18n="project_drunk_meta_contexto">Game Jam (Generation Colombia)</span>
+          </div>
+        </section>
+
+        <div class="project-divider"></div>
+
+        <!-- DESCRIPCIÓN -->
+        <section class="project-section">
+          <h2 class="h2 section-title" data-i18n="project_drunk_desc_titulo">Descripción</h2>
+          <p class="section-text" data-i18n="project_drunk_desc_p1">
+            Drunk Driver es un juego Arcade Top-Down basado en la obtención de
+            puntaje alto ("High Score Chaser") desarrollado en un tiempo límite
+            de 50 horas. El jugador controla un vehículo en una ciudad caótica y
+            viva, donde debe destruir objetos del mobiliario urbano para acumular
+            puntos y sobrevivir.
+          </p>
+          <p class="section-text" data-i18n="project_drunk_desc_p2">
+            La recolección de alcohol aumenta drásticamente la velocidad del
+            vehículo y dificulta su control, obligando al jugador a encontrar un
+            balance entre el riesgo de chocar y la necesidad de mantener el
+            contador de tiempo activo. La ciudad reacciona a este caos gracias a
+            un sistema de tráfico inteligente y peatones con físicas interactivas.
+          </p>
+        </section>
+
+        <div class="project-divider"></div>
+
+        <!-- PROCESO DE DESARROLLO -->
+        <section class="project-section">
+          <h2 class="h2 section-title" data-i18n="project_drunk_proceso_titulo">Proceso de desarrollo</h2>
+          <ol class="process-list">
+            <li>
+              <span class="process-number">01</span>
+              <span data-i18n="project_drunk_proceso_01">Sistemas de Generación (Spawners): Programación de sistemas modulares descentralizados para la aparición y reaparición automática de vehículos en ruta y objetos destructibles en el mapa, basando la lógica en la vigilancia de variables nulas (null-checking).</span>
+            </li>
+            <li>
+              <span class="process-number">02</span>
+              <span data-i18n="project_drunk_proceso_02">Inteligencia Artificial de Tráfico: Desarrollo de un sistema de navegación escalable mediante rutas de puntos (Waypoints) y detección frontal mediante Raycasts, optimizando el rendimiento de la ciudad sin depender de NavMesh.</span>
+            </li>
+            <li>
+              <span class="process-number">03</span>
+              <span data-i18n="project_drunk_proceso_03">Interacciones Físicas: Implementación de transiciones dinámicas entre las animaciones de los peatones (NPCs) y físicas Ragdoll al momento de recibir un impacto a alta velocidad.</span>
+            </li>
+            <li>
+              <span class="process-number">04</span>
+              <span data-i18n="project_drunk_proceso_04">Arquitectura Modular: Creación de scripts independientes con variables expuestas en el inspector para facilitar y acelerar la labor de ensamblaje por parte del equipo de Diseño de Niveles.</span>
+            </li>
+          </ol>
+        </section>
+
+        <div class="project-divider"></div>
+
+        <!-- DESAFÍOS Y APRENDIZAJES -->
+        <section class="project-section">
+          <h2 class="h2 section-title" data-i18n="project_drunk_desafios_titulo">Desafíos y aprendizajes</h2>
+          <p class="section-text" data-i18n="project_drunk_desafios">
+            Uno de los mayores retos fue lograr que la interacción física entre
+            el vehículo del jugador y los objetos del mapa se sintiera
+            satisfactoria. Inicialmente, las colisiones sólidas frenaban el
+            ritmo arcade del juego. Para solucionarlo, cambié la detección de
+            daño a un sistema de "Triggers" (disparadores) condicionados por
+            etiquetas, permitiendo que el jugador atraviese y haga explotar los
+            objetos de forma fluida sin perder su impulso. Esto me enseñó a
+            priorizar la sensación de juego ("Game Feel") sobre el realismo
+            físico puro, además de la importancia de mantener un código
+            desacoplado para evitar cuellos de botella bajo la presión de una
+            Game Jam.
+          </p>
+        </section>
+
+        <div class="project-divider"></div>
+
+        <!-- HERRAMIENTAS Y HABILIDADES -->
+        <section class="project-section project-tools-skills">
+          <div class="tools-col">
+            <h3 class="h3" data-i18n="project_drunk_herramientas_titulo">Herramientas</h3>
+            <ul class="badge-list">
+              <li class="badge">Unity 3D</li>
+              <li class="badge">C#</li>
+              <li class="badge">Git</li>
+              <li class="badge">GitHub</li>
+            </ul>
+          </div>
+          <div class="skills-col">
+            <h3 class="h3" data-i18n="project_drunk_habilidades_titulo">Habilidades demostradas</h3>
+            <ul class="badge-list">
+              <li class="badge">Programación de Jugabilidad</li>
+              <li class="badge">Físicas de Unity</li>
+              <li class="badge">Arquitectura de Sistemas</li>
+              <li class="badge">Resolución de Problemas</li>
+              <li class="badge">Trabajo bajo presión</li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="project-divider"></div>
+
+        <!-- GALERÍA -->
+        <section class="project-section">
+          <h2 class="h2 section-title" data-i18n="project_drunk_galeria_titulo">Galería</h2>
+          <div class="gallery-grid">
+            <figure class="gallery-item"><img src="./assets/images/DrunkCover.png" alt="Captura 1" loading="lazy" /></figure>
+            <figure class="gallery-item"><img src="./assets/images/DrunkCover.png" alt="Captura 2" loading="lazy" /></figure>
+            <figure class="gallery-item"><img src="./assets/images/DrunkCover.png" alt="Captura 3" loading="lazy" /></figure>
+            <figure class="gallery-item"><img src="./assets/images/DrunkCover.png" alt="Captura 4" loading="lazy" /></figure>
+          </div>
+        </section>
+
+        <div class="project-divider"></div>
+
+        <!-- ENLACES -->
+        <section class="project-section project-links">
+          <h2 class="h2 section-title" data-i18n="project_drunk_enlaces_titulo">Enlaces</h2>
+          <div class="link-buttons">
+            <a
+              href="https://github.com/MarianoMushy/Drunk-Driver"
+              target="_blank"
+              class="btn-outline"
+              data-i18n="project_drunk_ver_github"
+              >VER EN GITHUB</a
+            >
+            <a
+              href="https://camilomoreno.itch.io/drunk-driver"
+              target="_blank"
+              class="btn-outline"
+              data-i18n="project_drunk_ver_itch"
+              >JUGAR EN ITCH.IO</a
+            >
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!--
+    - scripts
+  -->
+    <script src="./assets/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

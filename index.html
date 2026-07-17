@@ -372,7 +372,7 @@
                   </p>
 
                   <a
-                    href="#portfolio"
+                    href="project-corazon.html"
                     class="destacado-link"
                     data-i18n="inicio_ver_proyecto"
                   >
@@ -385,39 +385,95 @@
         </article>
 
         <!--
-        - #ABOUT (se eliminó la sección .service)
+        - #ABOUT
       -->
 
         <article class="about" data-page="about">
           <header>
-            <h2 class="h2 article-title" data-i18n="about_title">
-              Acerca de mí
-            </h2>
+            <h2 class="h2 article-title" data-i18n="about_title">Sobre mí</h2>
           </header>
 
-          <section class="about-text">
-            <p data-i18n="about_p1">
-              Soy estudiante de Ingeniería de Sistemas y actualmente me estoy
-              formando como desarrollador de videojuegos a través del programa
-              del SENA y Generation Colombia, con un enfoque principal en Unity
-              y C#.
-            </p>
-            <p data-i18n="about_p2">
-              Me apasiona la programación porque disfruto analizar problemas,
-              investigar diferentes soluciones y construir sistemas que den vida
-              a experiencias interactivas. Uno de los aspectos que más me motiva
-              del desarrollo de videojuegos es convertir una idea en una
-              mecánica funcional y ver cómo, poco a poco, un proyecto comienza a
-              tomar forma.
-            </p>
-            <p data-i18n="about_p3">
-              Actualmente estoy desarrollando proyectos personales y académicos
-              para fortalecer mis habilidades en programación, arquitectura de
-              videojuegos y desarrollo con Unity. Mi objetivo es seguir
-              creciendo como Game Programmer, colaborar con equipos de
-              desarrollo y contribuir a la creación de videojuegos que ofrezcan
-              experiencias entretenidas y de calidad.
-            </p>
+          <section class="about-content">
+            <!-- Encabezado destacado -->
+            <h3 class="about-subtitle" data-i18n="about_subtitle">
+              Transformando ideas en mecánicas interactivas
+            </h3>
+
+            <!-- Texto -->
+            <div class="about-text">
+              <p data-i18n="about_p1">
+                Soy Camilo, desarrollador de videojuegos con base en ingeniería
+                de sistemas. Actualmente me formo como Unity Developer en
+                Generation Colombia, canalizando mi gusto por resolver problemas
+                y estructurar sistemas hacia la creación de experiencias
+                interactivas.
+              </p>
+              <p data-i18n="about_p2">
+                Me apasiona lograr que un juego se sienta increíble al
+                controlarlo. Me enfoco en programar las mecánicas principales,
+                darles comportamiento a los personajes mediante inteligencia
+                artificial, y asegurar que cada acción responda de manera
+                fluida. He puesto en práctica estas habilidades en distintos
+                proyectos y game jams.
+              </p>
+              <p data-i18n="about_p3">
+                Como disfruto entender cómo funcionan las cosas desde adentro,
+                me preocupo tanto por mantener un código ordenado y fácil de
+                expandir, como por garantizar que el jugador tenga una
+                experiencia inmersiva y sin interrupciones.
+              </p>
+            </div>
+
+            <!-- Habilidades en cuadrícula de 3 columnas -->
+            <div class="about-skills">
+              <div class="skill-category">
+                <h4 class="skill-category-title" data-i18n="skill_cat_dev">
+                  Desarrollo
+                </h4>
+                <ul class="skill-tags">
+                  <li><span data-i18n="skill_unity">Unity</span></li>
+                  <li><span data-i18n="skill_csharp">C#</span></li>
+                  <li><span data-i18n="skill_python">Python</span></li>
+                  <li><span data-i18n="skill_htmlcss">HTML &amp; CSS</span></li>
+                </ul>
+              </div>
+              <div class="skill-category">
+                <h4 class="skill-category-title" data-i18n="skill_cat_tools">
+                  Herramientas
+                </h4>
+                <ul class="skill-tags">
+                  <li><span>Git / GitHub</span></li>
+                  <li><span>Aseprite</span></li>
+                </ul>
+              </div>
+              <div class="skill-category">
+                <h4 class="skill-category-title" data-i18n="skill_cat_focus">
+                  Enfoque
+                </h4>
+                <ul class="skill-tags">
+                  <li>
+                    <span data-i18n="skill_focus_gp"
+                      >Programación de Gameplay</span
+                    >
+                  </li>
+                  <li>
+                    <span data-i18n="skill_focus_ai"
+                      >Inteligencia Artificial</span
+                    >
+                  </li>
+                  <li>
+                    <span data-i18n="skill_focus_arch"
+                      >Arquitectura de Código</span
+                    >
+                  </li>
+                  <li>
+                    <span data-i18n="skill_focus_prob"
+                      >Resolución de Problemas</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
           </section>
         </article>
 
@@ -671,60 +727,60 @@
                 data-filter-item
                 data-category="academic"
               >
-                <figure class="project-img">
-                  <div
-                    class="project-item-icon-box"
-                    style="display: flex; gap: 15px; justify-content: center"
-                  >
-                    <!-- Botón 1: Enlace a GitHub -->
+                <article class="project-card">
+                  <figure class="project-img">
+                    <img
+                      src="./assets/images/Cover.png"
+                      alt="Corazón del Saber"
+                      loading="lazy"
+                    />
+                    <div class="project-actions">
+                      <a
+                        href="https://github.com/tu-usuario/corazon-del-saber"
+                        target="_blank"
+                        class="action-btn"
+                        title="GitHub"
+                      >
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                    </div>
+                  </figure>
+                  <div class="project-body">
+                    <p
+                      class="project-meta"
+                      data-i18n="project_corazon_meta"
+                    >
+                      2026 • PROYECTO ACADÉMICO
+                    </p>
+                    <h3
+                      class="project-title"
+                      data-i18n="project_corazon_title"
+                    >
+                      Corazón del Saber
+                    </h3>
+                    <p
+                      class="project-description"
+                      data-i18n="project_corazon_desc"
+                    >
+                      Proyecto académico desarrollado en Unity 6. Implementa mecánicas de 
+                      plataformas, combate, exploración tipo Metroidvania, IA de enemigos, 
+                      gestión de escenas y diseño modular de niveles con Tilemaps
+                    </p>
+                    <ul class="project-tags">
+                      <li>Unity</li>
+                      <li>C#</li>
+                      <li>Tilemaps</li>
+                      <li>IA</li>
+                      <li>Aseprite</li>
+                    </ul>
                     <a
-                      href="https://github.com/tu-usuario/corazon-del-saber"
-                      target="_blank"
-                      title="Ver Repositorio"
-                      style="
-                        color: var(--orange-yellow-crayola);
-                        font-size: 25px;
-                      "
+                      href="project-corazon.html"
+                      class="project-link"
+                      data-i18n="project_ver_detalles"
+                      >VER DETALLES →</a
                     >
-                      <ion-icon
-                        name="logo-github"
-                        title="Ver proyecto en GitHub"
-                      ></ion-icon>
-                    </a>
-
-                    <!-- Botón 2: Abrir Detalles (Modal) -->
-                    <button
-                      class="open-modal-btn"
-                      data-target="modal-corazon"
-                      title="Ver Detalles"
-                      style="
-                        background: none;
-                        border: none;
-                        color: var(--orange-yellow-crayola);
-                        font-size: 28px;
-                        cursor: pointer;
-                      "
-                    >
-                      <ion-icon
-                        name="information-circle-outline"
-                        title="Informacion del Proyecto"
-                      ></ion-icon>
-                    </button>
                   </div>
-
-                  <img
-                    src="./assets/images/Cover.png"
-                    alt="Gameplay Corazón del Saber"
-                    loading="lazy"
-                  />
-                </figure>
-
-                <h3 class="project-title" data-i18n="project_corazon_title">
-                  Corazón del Saber
-                </h3>
-                <p class="project-category" data-i18n="project_corazon_cat">
-                  Unity 2D / C#
-                </p>
+                </article>
               </li>
 
               <!-- PROYECTO 2: DRUNK DRIVER -->
@@ -733,60 +789,59 @@
                 data-filter-item
                 data-category="gamejam"
               >
-                <figure class="project-img">
-                  <div
-                    class="project-item-icon-box"
-                    style="display: flex; gap: 15px; justify-content: center"
-                  >
-                    <!-- Botón 1: Enlace a GitHub -->
+                <article class="project-card">
+                  <figure class="project-img">
+                    <img
+                      src="./assets/images/DrunkCover.png"
+                      alt="Drunk Driver"
+                      loading="lazy"
+                    />
+                    <div class="project-actions">
+                      <a
+                        href="https://github.com/MarianoMushy/Drunk-Driver"
+                        target="_blank"
+                        class="action-btn"
+                        title="GitHub"
+                      >
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                    </div>
+                  </figure>
+                  <div class="project-body">
+                    <p
+                      class="project-meta"
+                      data-i18n="project_drunk_meta"
+                    >
+                      2026 • GAME JAM
+                    </p>
+                    <h3
+                      class="project-title"
+                      data-i18n="project_drunk_title"
+                    >
+                      Drunk Driver
+                    </h3>
+                    <p
+                      class="project-description"
+                      data-i18n="project_drunk_desc"
+                    >
+                      Top-Down Arcade en Unity 3D. El desarrollo destaca por la
+                      implementación de sistemas de patrullaje sin NavMesh,
+                      spawners desacoplados y físicas Ragdoll.
+                    </p>
+                    <ul class="project-tags">
+                      <li>Unity 3D</li>
+                      <li>C#</li>
+                      <li>Físicas</li>
+                      <li>Spawners</li>
+                    </ul>
                     <a
-                      href="https://github.com/MarianoMushy/Drunk-Driver"
-                      target="_blank"
-                      title="Ver Repositorio"
-                      style="
-                        color: var(--orange-yellow-crayola);
-                        font-size: 25px;
-                      "
+                      href="project-drunk.html"
+                      class="project-link"
+                      data-i18n="project_ver_detalles"
+                      >VER DETALLES →</a
                     >
-                      <ion-icon
-                        name="logo-github"
-                        title="Ver proyecto en GitHub"
-                      ></ion-icon>
-                    </a>
-
-                    <!-- Botón 2: Abrir Detalles (Modal) -->
-                    <button
-                      class="open-modal-btn"
-                      data-target="modal-drunk"
-                      title="Ver Detalles"
-                      style="
-                        background: none;
-                        border: none;
-                        color: var(--orange-yellow-crayola);
-                        font-size: 28px;
-                        cursor: pointer;
-                      "
-                    >
-                      <ion-icon
-                        name="information-circle-outline"
-                        title="Informacion del Proyecto"
-                      ></ion-icon>
-                    </button>
                   </div>
-
-                  <img
-                    src="./assets/images/DrunkCover.png"
-                    alt="Gameplay Drunk Driver"
-                    loading="lazy"
-                  />
-                </figure>
-
-                <h3 class="project-title" data-i18n="project_drunk_title">
-                  Drunk Driver
-                </h3>
-                <p class="project-category" data-i18n="project_drunk_cat">
-                  Game Jam / Unity 3D
-                </p>
+                </article>
               </li>
             </ul>
           </section>
@@ -877,152 +932,21 @@
         </article>
       </div>
 
-      <!-- MODAL CORAZÓN DEL SABER -->
+      <!--
+      ============================================================
+      MODALES (Comentados para futuras páginas individuales)
+      ============================================================
+      -->
+
+      <!--
       <div class="modal-container" id="modal-corazon">
-        <div class="modal-content">
-          <button class="close-modal-btn">
-            <ion-icon name="close-outline"></ion-icon>
-          </button>
-
-          <h3 class="h3 modal-title" data-i18n="modal_corazon_title">
-            Corazón del Saber
-          </h3>
-          <p
-            style="
-              color: var(--light-gray);
-              margin-bottom: 20px;
-              font-size: var(--fs-6);
-            "
-          >
-            <span data-i18n-html="modal_corazon_role"
-              ><strong>Rol:</strong> Desarrollador Unity 2D / Programador
-              C#</span
-            ><br />
-            <span data-i18n-html="modal_corazon_genre"
-              ><strong>Género:</strong> 2D Metroidvania</span
-            >
-          </p>
-
-          <div
-            class="modal-text"
-            style="
-              color: var(--light-gray-70);
-              font-size: var(--fs-6);
-              line-height: 1.6;
-            "
-          >
-            <p style="margin-bottom: 15px" data-i18n-html="modal_corazon_text">
-              Proyecto enfocado en la construcción de sistemas robustos y
-              mecánicas fluidas inspiradas en clásicos como
-              <em>Blasphemous</em> o <em>Hollow Knight</em>.
-            </p>
-            <ul
-              style="
-                list-style-type: disc;
-                margin-left: 20px;
-                margin-bottom: 15px;
-              "
-            >
-              <li data-i18n-html="modal_corazon_item1">
-                <strong>Controlador de Jugador:</strong> Programación de físicas
-                en C# para lograr movimiento preciso, sistema de salto y
-                mecánica de <em>dash</em>.
-              </li>
-              <li data-i18n-html="modal_corazon_item2">
-                <strong>Inteligencia Artificial:</strong> Creación de módulos de
-                IA para enemigos base y jefes, integrando sistemas de
-                patrullaje, percepción y combate cuerpo a cuerpo mediante
-                máquinas de estado.
-              </li>
-              <li data-i18n-html="modal_corazon_item3">
-                <strong>Arquitectura de Niveles:</strong> Diseño y construcción
-                de escenarios directamente en el motor utilizando el sistema
-                nativo de <em>Tilemaps</em>.
-              </li>
-              <li data-i18n-html="modal_corazon_item4">
-                <strong>Gestión de UI:</strong> Interfaz dinámica optimizada
-                para reflejar salud en tiempo real sin sacrificar rendimiento.
-              </li>
-            </ul>
-          </div>
-        </div>
+        ...
       </div>
-
-      <!-- MODAL DRUNK DRIVER -->
       <div class="modal-container" id="modal-drunk">
-        <div class="modal-content">
-          <button class="close-modal-btn">
-            <ion-icon name="close-outline"></ion-icon>
-          </button>
-
-          <h3 class="h3 modal-title" data-i18n="modal_drunk_title">
-            Drunk Driver
-          </h3>
-          <p
-            style="
-              color: var(--light-gray);
-              margin-bottom: 20px;
-              font-size: var(--fs-6);
-            "
-          >
-            <span data-i18n-html="modal_drunk_role"
-              ><strong>Rol:</strong> Gameplay Programmer</span
-            ><br />
-            <span data-i18n-html="modal_drunk_event"
-              ><strong>Evento:</strong> Generation Colombia Game Jam (50
-              hrs)</span
-            ><br />
-            <span data-i18n-html="modal_drunk_genre"
-              ><strong>Género:</strong> Top-Down Arcade</span
-            >
-          </p>
-
-          <div
-            class="modal-text"
-            style="
-              color: var(--light-gray-70);
-              font-size: var(--fs-6);
-              line-height: 1.6;
-            "
-          >
-            <p style="margin-bottom: 15px" data-i18n="modal_drunk_text">
-              Producto Mínimo Viable (MVP) desarrollado en un lapso de 50 horas.
-              Un juego <em>High Score Chaser</em> de conducción caótica y
-              destrucción.
-            </p>
-            <ul
-              style="
-                list-style-type: disc;
-                margin-left: 20px;
-                margin-bottom: 15px;
-              "
-            >
-              <li data-i18n-html="modal_drunk_item1">
-                <strong>IA de Tráfico y Navegación:</strong> Creación de un
-                sistema escalable de patrullaje usando Waypoints y Raycasts para
-                detección de obstáculos, prescindiendo de NavMesh para optimizar
-                rendimiento.
-              </li>
-              <li data-i18n-html="modal_drunk_item2">
-                <strong>Sistemas Desacoplados de Spawners:</strong> Lógica de
-                generación procedural y respawn automático mediante la
-                vigilancia de referencias de memoria (null-checking) para
-                objetos destructibles y vehículos.
-              </li>
-              <li data-i18n-html="modal_drunk_item3">
-                <strong>Interacciones Físicas:</strong> Transición dinámica de
-                animación a físicas de <em>Ragdoll</em> tras detección de
-                impacto con NPCs.
-              </li>
-              <li data-i18n-html="modal_drunk_item4">
-                <strong>Arquitectura Modular:</strong> Uso de variables
-                expuestas e independencia de scripts para facilitar la labor de
-                ensamblaje por parte del equipo de Level Design.
-              </li>
-            </ul>
-          </div>
-        </div>
+        ...
       </div>
+      -->
+
     </main>
 
     <!--
