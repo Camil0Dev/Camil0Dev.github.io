@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="page_title">Camilo Moreno - Rescue Deeper</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <!--
+      - SIDEBAR (idéntico al del index)
+      -->
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Camilo Moreno"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" data-i18n="name">Camilo Moreno</h1>
+            <p class="title" data-i18n="title">Desarrollador Unity</p>
+            <a
+              href="./assets/CV.pdf"
+              download
+              class="title"
+              style="
+                margin: 12px auto 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                text-decoration: none;
+                cursor: pointer;
+                width: max-content;
+              "
+            >
+              <ion-icon name="cloud-download-outline"></ion-icon>
+              <span data-i18n="download_cv">Descargar CV</span>
+            </a>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span data-i18n="show_contacts">Mostrar Contactos</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+
+          <button class="lang-toggle" id="langToggle" title="Cambiar idioma">
+            ES
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title" data-i18n="contact_email">Email</p>
+                <a
+                  href="mailto:camilomoreno4283@hotmail.com"
+                  class="contact-link"
+                  >camilomoreno4283@hotmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title" data-i18n="contact_phone">Teléfono</p>
+                <a href="tel:+573057324283" class="contact-link"
+                  >+57 3057324283</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="logo-github"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title" data-i18n="contact_github">GitHub</p>
+                <a
+                  href="https://github.com/Camil0Dev"
+                  target="_blank"
+                  class="contact-link"
+                  >https://github.com/Camil0Dev</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title" data-i18n="contact_location">
+                  Ubicación
+                </p>
+                <address data-i18n="location_address">Bogotá, Colombia</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/camilo-moreno-unity-developer/"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="https://camilomoreno.itch.io/"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="game-controller-outline"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - CONTENIDO PRINCIPAL
+      -->
+      <div class="main-content project-page-wrapper">
+        <!-- Botón volver -->
+        <div class="project-back">
+          <a href="index.html#portfolio" data-i18n="project_rescue_volver">
+            ← VOLVER AL PORTAFOLIO
+          </a>
+        </div>
+
+        <!-- HERO -->
+        <header class="project-hero">
+          <div class="hero-text">
+            <div class="hero-badges">
+              <span class="badge" data-i18n="project_rescue_badge_1">VIDEOJUEGO</span>
+              <span class="badge" data-i18n="project_rescue_badge_2">GAME JAM</span>
+            </div>
+            <h1 class="h1 project-title" data-i18n="project_rescue_title">
+              Rescue Deeper
+            </h1>
+            <p class="hero-subtitle" data-i18n="project_rescue_hero_subtitle">
+              Un plataformas 2D de descenso y rescate donde cada nivel es más oscuro y peligroso que el anterior.
+            </p>
+          </div>
+
+          <!-- Video / Iframe placeholder -->
+          <div class="hero-video">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=Jq8sB"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </header>
+
+        <!-- METADATOS -->
+        <section class="project-meta-grid">
+          <div class="meta-item">
+            <span class="meta-label" data-i18n="project_rescue_meta_ano_label">AÑO</span>
+            <span class="meta-value" data-i18n="project_rescue_meta_ano">2026</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label" data-i18n="project_rescue_meta_estado_label">ESTADO</span>
+            <span class="meta-value" data-i18n="project_rescue_meta_estado">Finalizado (Desarrollado en 25 horas)</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label" data-i18n="project_rescue_meta_rol_label">MI ROL</span>
+            <span class="meta-value" data-i18n="project_rescue_meta_rol">Programador Core y Jugabilidad (C#)</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label" data-i18n="project_rescue_meta_contexto_label">CONTEXTO</span>
+            <span class="meta-value" data-i18n="project_rescue_meta_contexto">Game Jam</span>
+          </div>
+        </section>
+
+        <div class="project-divider"></div>
+
+        <!-- DESCRIPCIÓN -->
+        <section class="project-section">
+          <h2 class="h2 section-title" data-i18n="project_rescue_desc_titulo">Descripción</h2>
+          <p class="section-text" data-i18n="project_rescue_desc_p1">
+            Rescue Deeper es un trepidante juego de plataformas 2D desarrollado bajo un estricto límite de 25 horas. El jugador asume el papel de un minero que debe descender a través de los 9 pisos de un edificio colapsado, destrozando escombros y superando obstáculos plataformeros para rescatar a los sobrevivientes atrapados.
+          </p>
+          <p class="section-text" data-i18n="project_rescue_desc_p2">
+            El título destaca por una atmósfera opresiva que se intensifica dinámicamente: a medida que el jugador desciende, la luz global disminuye, obligándolo a depender de su linterna direccional. Todo esto es acompañado por un Game Feel extremadamente pulido, garantizando que el control del personaje sea ágil, justo y responsivo en todo momento.
+          </p>
+        </section>
+
+        <div class="project-divider"></div>
+
+        <!-- PROCESO DE DESARROLLO -->
+        <section class="project-section">
+          <h2 class="h2 section-title" data-i18n="project_rescue_proceso_titulo">Proceso de desarrollo</h2>
+          <ol class="process-list">
+            <li>
+              <span class="process-number">01</span>
+              <span data-i18n="project_rescue_proceso_01">Físicas y Game Feel: Implementación de un controlador de jugador avanzado utilizando el nuevo Input System de Unity. Se integraron técnicas profesionales como Coyote Time, Jump Buffering y altura de salto variable para asegurar una precisión absoluta en el plataformeo.</span>
+            </li>
+            <li>
+              <span class="process-number">02</span>
+              <span data-i18n="project_rescue_proceso_02">Sistema de Destrucción Dinámica: Creación de un ecosistema modular orientado a eventos, donde los bloques y obstáculos reaccionan a los golpes, alternando sus estados de animación de daño de manera autónoma antes de ejecutar físicas y partículas de destrucción.</span>
+            </li>
+            <li>
+              <span class="process-number">03</span>
+              <span data-i18n="project_rescue_proceso_03">Iluminación Progresiva (URP 2D): Desarrollo de un gestor de iluminación (LightingManager) que interpola matemáticamente la profundidad del jugador (eje Y) para oscurecer la luz global del mundo en tiempo real, complementado con una linterna direccional dinámica.</span>
+            </li>
+            <li>
+              <span class="process-number">04</span>
+              <span data-i18n="project_rescue_proceso_04">Arquitectura de UX y Herramientas: Programación de una mirilla de combate (Crosshair) que detecta colisiones mediante físicas 2D para ofrecer feedback instantáneo al apuntar. Adicionalmente, se programaron herramientas nativas de editor (Gizmos) para agilizar la labor del equipo de Diseño de Niveles.</span>
+            </li>
+          </ol>
+        </section>
+
+        <div class="project-divider"></div>
+
+        <!-- DESAFÍOS Y APRENDIZAJES -->
+        <section class="project-section">
+          <h2 class="h2 section-title" data-i18n="project_rescue_desafios_titulo">Desafíos y aprendizajes</h2>
+          <p class="section-text" data-i18n="project_rescue_desafios">
+            Uno de los mayores retos fue evitar el "código espagueti" y mantener el rendimiento estable bajo la presión extrema de las 25 horas de la Jam. Para superarlo, opté por una arquitectura modular de nivel Mid-Senior. En lugar de depender de la compleja red visual del Animator de Unity, desarrollé una Máquina de Estados por Código, logrando que transiciones complejas (como atacar en el aire) fueran fluidas y libres de bugs. Este proyecto me enseñó el inmenso valor de priorizar el Game Feel desde el minuto cero y la importancia de escribir código limpio y encapsulado, lo cual permitió que mi compañero integrara el resto de sistemas y niveles sin ningún tipo de fricción técnica.
+          </p>
+        </section>
+
+        <div class="project-divider"></div>
+
+        <!-- HERRAMIENTAS Y HABILIDADES -->
+        <section class="project-section project-tools-skills">
+          <div class="tools-col">
+            <h3 class="h3" data-i18n="project_rescue_herramientas_titulo">Herramientas</h3>
+            <ul class="badge-list">
+              <li class="badge">Unity 2D (URP)</li>
+              <li class="badge">C#</li>
+              <li class="badge">Git</li>
+              <li class="badge">GitHub</li>
+            </ul>
+          </div>
+          <div class="skills-col">
+            <h3 class="h3" data-i18n="project_rescue_habilidades_titulo">Habilidades demostradas</h3>
+            <ul class="badge-list">
+              <li class="badge">Programación de Jugabilidad (Game Feel)</li>
+              <li class="badge">Desarrollo de Máquinas de Estado</li>
+              <li class="badge">Gestión de Iluminación Dinámica</li>
+              <li class="badge">Arquitectura Modular</li>
+              <li class="badge">Trabajo bajo presión</li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="project-divider"></div>
+
+        <!-- GALERÍA -->
+        <section class="project-section">
+          <h2 class="h2 section-title" data-i18n="project_rescue_galeria_titulo">Galería</h2>
+          <div class="gallery-grid">
+            <!-- Recuerda reemplazar las imágenes con capturas reales de tu juego -->
+            <figure class="gallery-item"><img src="./assets/images/RescueCover.png" alt="Captura 1" loading="lazy" /></figure>
+            <figure class="gallery-item"><img src="./assets/images/RescueCover.png" alt="Captura 2" loading="lazy" /></figure>
+            <figure class="gallery-item"><img src="./assets/images/RescueCover.png" alt="Captura 3" loading="lazy" /></figure>
+            <figure class="gallery-item"><img src="./assets/images/RescueCover.png" alt="Captura 4" loading="lazy" /></figure>
+          </div>
+        </section>
+
+        <div class="project-divider"></div>
+
+        <!-- ENLACES -->
+        <section class="project-section project-links">
+          <h2 class="h2 section-title" data-i18n="project_rescue_enlaces_titulo">Enlaces</h2>
+          <div class="link-buttons">
+            <a
+              href="#"
+              target="_blank"
+              class="btn-outline"
+              data-i18n="project_rescue_ver_github"
+              >VER EN GITHUB</a
+            >
+            <a
+              href="#"
+              target="_blank"
+              class="btn-outline"
+              data-i18n="project_rescue_ver_itch"
+              >JUGAR EN ITCH.IO</a
+            >
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!--
+    - scripts
+  -->
+    <script src="./assets/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
