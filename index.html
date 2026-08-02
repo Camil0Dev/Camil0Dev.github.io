@@ -54,7 +54,7 @@
         <div class="sidebar-info">
           <figure class="avatar-box">
             <img
-              src="./assets/images/my-avatar.png"
+              src="./assets/images/Foto 2.0.png"
               alt="Camilo Moreno"
               width="80"
             />
@@ -137,7 +137,7 @@
                   href="https://github.com/Camil0Dev"
                   target="_blank"
                   class="contact-link"
-                  >https://github.com/Camil0Dev</a
+                  >Camil0Dev</a
                 >
               </div>
             </li>
@@ -153,28 +153,34 @@
                 <address data-i18n="location_address">Bogotá, Colombia</address>
               </div>
             </li>
-          </ul>
-
-          <div class="separator"></div>
-
-          <ul class="social-list">
-            <li class="social-item">
-              <a
-                href="https://www.linkedin.com/in/camilo-moreno-unity-developer/"
-                target="_blank"
-                class="social-link"
-              >
+            <li class="contact-item">
+              <div class="icon-box">
                 <ion-icon name="logo-linkedin"></ion-icon>
-              </a>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">LinkedIn</p>
+                <a
+                  href="https://www.linkedin.com/in/camilo-moreno-unity-developer/"
+                  target="_blank"
+                  class="contact-link"
+                  >Camilo Moreno</a
+                >
+              </div>
             </li>
-            <li class="social-item">
-              <a
-                href="https://camilomoreno.itch.io/"
-                target="_blank"
-                class="social-link"
-              >
+
+            <li class="contact-item">
+              <div class="icon-box">
                 <ion-icon name="game-controller-outline"></ion-icon>
-              </a>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Itch.io</p>
+                <a
+                  href="https://camilomoreno.itch.io/"
+                  target="_blank"
+                  class="contact-link"
+                  >camilomoreno.itch.io</a
+                >
+              </div>
             </li>
           </ul>
         </div>
@@ -360,11 +366,13 @@
 
               <div class="destacado-card">
                 <figure class="destacado-img">
-                  <img
-                    src="./assets/images/Cover.png"
-                    alt="Corazón del Saber"
-                    loading="lazy"
-                  />
+                  <a href="project-corazon.html">
+                    <img
+                      src="./assets/images/Cover.png"
+                      alt="Corazón del Saber - Último Proyecto"
+                      loading="lazy"
+                    />
+                  </a>
                 </figure>
 
                 <div class="destacado-info">
@@ -498,48 +506,63 @@
           </header>
 
           <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
+            <div class="title-wrapper" style="display: flex; justify-content: space-between; align-items: center; width: 100%; flex-wrap: wrap; gap: 15px;">
+              <div style="display: flex; align-items: center; gap: 15px;">
+                <div class="icon-box">
+                  <ion-icon name="book-outline"></ion-icon>
+                </div>
+                <h3 class="h3" data-i18n="education_title" style="margin-bottom: 0;">Educación</h3>
               </div>
-
-              <h3 class="h3" data-i18n="education_title">Educación</h3>
+              
+              <a href="./assets/CV.pdf" download class="form-btn" style="display: flex; align-items: center; gap: 8px; padding: 12px 20px; text-decoration: none; border-radius: 14px; color: var(--orange-yellow-crayola); background: var(--border-gradient-onyx); box-shadow: var(--shadow-2); font-weight: var(--fw-500); transition: var(--transition-1); width: fit-content; z-index: 2;">
+                <ion-icon name="cloud-download-outline" style="font-size: 20px;"></ion-icon>
+                <span data-i18n="download_cv">Descargar CV</span>
+              </a>
             </div>
 
             <ol class="timeline-list">
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title" data-i18n="edu_generation">
-                  Generation Colombia
-                </h4>
-                <span>2026 — Presente</span>
-                <p class="timeline-text" data-i18n="edu_generation_desc">
-                  Bootcamp Intensivo en Desarrollo de Software. Capacitación
-                  técnica orientada a metodologías ágiles y resolución de
-                  problemas.
-                </p>
+                <details class="timeline-details">
+                  <summary>
+                    <h4 class="h4 timeline-item-title" data-i18n="edu_generation">Generation Colombia</h4>
+                    <ion-icon name="chevron-down-outline" class="dropdown-icon"></ion-icon>
+                    <span>2026 — Presente</span>
+                  </summary>
+                  <p class="timeline-text" data-i18n="edu_generation_desc">
+                    Bootcamp Intensivo en Desarrollo de Software. Capacitación
+                    técnica orientada a metodologías ágiles y resolución de
+                    problemas.
+                  </p>
+                </details>
               </li>
 
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title" data-i18n="edu_sena">
-                  SENA
-                </h4>
-                <span>10/2025 — Presente</span>
-                <p class="timeline-text" data-i18n="edu_sena_desc">
-                  Técnico en Desarrollo de Videojuegos. Formación enfocada en
-                  programación C#, diseño de mecánicas e Inteligencia Artificial
-                  en Unity.
-                </p>
+                <details class="timeline-details">
+                  <summary>
+                    <h4 class="h4 timeline-item-title" data-i18n="edu_sena">SENA</h4>
+                    <ion-icon name="chevron-down-outline" class="dropdown-icon"></ion-icon>
+                    <span>10/2025 — Presente</span>
+                  </summary>
+                  <p class="timeline-text" data-i18n="edu_sena_desc">
+                    Técnico en Desarrollo de Videojuegos. Formación enfocada en
+                    programación C#, diseño de mecánicas e Inteligencia Artificial
+                    en Unity.
+                  </p>
+                </details>
               </li>
 
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title" data-i18n="edu_unad">
-                  UNAD
-                </h4>
-                <span>01/2025 — Presente</span>
-                <p class="timeline-text" data-i18n="edu_unad_desc">
-                  Ingeniería de Sistemas. Fundamentos en Programación Orientada
-                  a Objetos (POO), bases de datos y lógica algorítmica.
-                </p>
+                <details class="timeline-details">
+                  <summary>
+                    <h4 class="h4 timeline-item-title" data-i18n="edu_unad">UNAD</h4>
+                    <ion-icon name="chevron-down-outline" class="dropdown-icon"></ion-icon>
+                    <span>01/2025 — Presente</span>
+                  </summary>
+                  <p class="timeline-text" data-i18n="edu_unad_desc">
+                    Ingeniería de Sistemas. Fundamentos en Programación Orientada
+                    a Objetos (POO), bases de datos y lógica algorítmica.
+                  </p>
+                </details>
               </li>
             </ol>
           </section>
@@ -557,105 +580,97 @@
 
             <ol class="timeline-list">
               <li class="timeline-item">
-                <h4
-                  class="h4 timeline-item-title"
-                  data-i18n="exp_corazon_title"
-                >
-                  Corazón del Saber (Proyecto Académico)
-                </h4>
-                <span>11/2025 — Presente</span>
-                <p class="timeline-text" data-i18n-html="exp_corazon_desc">
-                  <strong>Desarrollador Unity 2D / Programador C#</strong><br />
-                  • Programé mecánicas base de jugador y gestión de cámara.<br />
-                  • Desarrollé IA de enemigos base y sistema de combate.<br />
-                  • Construí mapas y escenarios integrando Tilemaps nativos de
-                  Unity.<br />
-                  • Diseñé UI dinámica optimizando el espacio en pantalla.
-                </p>
+                <details class="timeline-details" open>
+                  <summary>
+                    <h4 class="h4 timeline-item-title" data-i18n="exp_corazon_title">Corazón del Saber (Proyecto Académico)</h4>
+                    <ion-icon name="chevron-down-outline" class="dropdown-icon"></ion-icon>
+                    <span>11/2025 — Presente</span>
+                  </summary>
+                  <p class="timeline-text" data-i18n-html="exp_corazon_desc">
+                    <strong>Desarrollador Unity 2D / Programador C#</strong><br />
+                    • Programé mecánicas base de jugador y gestión de cámara.<br />
+                    • Desarrollé IA de enemigos base y sistema de combate.<br />
+                    • Construí mapas y escenarios integrando Tilemaps nativos de Unity.<br />
+                    • Diseñé UI dinámica optimizando el espacio en pantalla.
+                  </p>
+                </details>
               </li>
-            </ol>
-          </section>
 
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="briefcase-outline"></ion-icon>
-              </div>
-
-              <h3 class="h3" data-i18n="work_experience">
-                Experiencia Laboral
-              </h3>
-            </div>
-
-            <ol class="timeline-list">
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title" data-i18n="work_data_title">
-                  Analista de Datos
-                </h4>
-                <span>02/2023 — Presente</span>
-                <p class="timeline-text" data-i18n-html="work_data_desc">
-                  <strong>Freelance Remoto</strong><br />
-                  • Desarrollé scripts en Python para automatizar y organizar
-                  arquitecturas de datos.<br />
-                  • Realicé debugging en bases de datos asegurando alta calidad
-                  en la información.<br />
-                  • Diseñé reportes interactivos en Power BI para beneficiar la
-                  toma de decisiones.
-                </p>
+                <details class="timeline-details">
+                  <summary>
+                    <h4 class="h4 timeline-item-title" data-i18n="exp_drunk_title">Drunk Driver (Game Jam)</h4>
+                    <ion-icon name="chevron-down-outline" class="dropdown-icon"></ion-icon>
+                    <span>08/07/2026 — 10/07/2026</span>
+                  </summary>
+                  <p class="timeline-text" data-i18n-html="exp_drunk_desc">
+                    <strong>Programador de Jugabilidad / Unity 3D</strong><br />
+                    • Desarrollé sistemas modulares (Spawners) para generación de objetos y vehículos.<br />
+                    • Implementé IA de tráfico mediante waypoints y raycasts, sin uso de NavMesh.<br />
+                    • Programé interacciones físicas dinámicas, incluyendo físicas ragdoll para peatones.
+                  </p>
+                </details>
+              </li>
+
+              <li class="timeline-item">
+                <details class="timeline-details">
+                  <summary>
+                    <h4 class="h4 timeline-item-title" data-i18n="exp_rescue_title">Rescue Deeper (Game Jam)</h4>
+                    <ion-icon name="chevron-down-outline" class="dropdown-icon"></ion-icon>
+                    <span>29/07/2026 — 30/07/2026</span>
+                  </summary>
+                  <p class="timeline-text" data-i18n-html="exp_rescue_desc">
+                    <strong>Programador Core y Jugabilidad (C#)</strong><br />
+                    • Implementé un controlador de jugador con Coyote Time y Jump Buffering usando el nuevo Input System.<br />
+                    • Desarrollé un sistema de destrucción modular orientado a eventos.<br />
+                    • Creé un gestor de iluminación progresiva en tiempo real con URP 2D.<br />
+                    • Programé herramientas de editor nativas (Gizmos) para diseño de niveles.
+                  </p>
+                </details>
               </li>
             </ol>
           </section>
 
           <section class="skill">
-            <h3 class="h3 skills-title" data-i18n="skills_title">
-              Habilidades
-            </h3>
+            <h3 class="h3 skills-title" data-i18n="skills_title">Habilidades</h3>
 
-            <ul class="skills-list content-card">
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5" data-i18n="skill_unity">Unity</h5>
-                  <data value="85">85%</data>
+            <div class="skills-container" style="display: flex; flex-wrap: wrap; gap: 20px;">
+              
+              <!-- Habilidades Técnicas -->
+              <div class="skills-col content-card" style="flex: 1 1 300px; padding: 25px; border-radius: 14px; position: relative;">
+                <div class="title-wrapper" style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                  <div class="icon-box" style="background: var(--border-gradient-onyx); width: 45px; height: 45px; border-radius: 12px; display: flex; justify-content: center; align-items: center; color: var(--orange-yellow-crayola); box-shadow: var(--shadow-1); font-size: 20px;">
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                  </div>
+                  <h4 class="h4" data-i18n="skills_tech_title">Habilidades Técnicas</h4>
                 </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 85%"></div>
-                </div>
-              </li>
+                <ul class="skills-list" style="display: flex; flex-direction: column; gap: 12px;">
+                  <li style="display: flex; align-items: center; gap: 12px;"><ion-icon name="checkmark-circle" style="color: var(--orange-yellow-crayola); font-size: 18px;"></ion-icon> <span data-i18n="skill_unity" style="color: var(--light-gray); font-size: var(--fs-6);">Unity</span></li>
+                  <li style="display: flex; align-items: center; gap: 12px;"><ion-icon name="checkmark-circle" style="color: var(--orange-yellow-crayola); font-size: 18px;"></ion-icon> <span data-i18n="skill_csharp" style="color: var(--light-gray); font-size: var(--fs-6);">C#</span></li>
+                  <li style="display: flex; align-items: center; gap: 12px;"><ion-icon name="checkmark-circle" style="color: var(--orange-yellow-crayola); font-size: 18px;"></ion-icon> <span data-i18n="skill_gameplay" style="color: var(--light-gray); font-size: var(--fs-6);">Programación de Jugabilidad</span></li>
+                  <li style="display: flex; align-items: center; gap: 12px;"><ion-icon name="checkmark-circle" style="color: var(--orange-yellow-crayola); font-size: 18px;"></ion-icon> <span data-i18n="skill_systems" style="color: var(--light-gray); font-size: var(--fs-6);">Sistemas de Juego</span></li>
+                  <li style="display: flex; align-items: center; gap: 12px;"><ion-icon name="checkmark-circle" style="color: var(--orange-yellow-crayola); font-size: 18px;"></ion-icon> <span data-i18n="skill_oop" style="color: var(--light-gray); font-size: var(--fs-6);">Programación Orientada a Objetos (POO)</span></li>
+                </ul>
+              </div>
 
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5" data-i18n="skill_csharp">C#</h5>
-                  <data value="85">85%</data>
+              <!-- Habilidades Blandas -->
+              <div class="skills-col content-card" style="flex: 1 1 300px; padding: 25px; border-radius: 14px; position: relative;">
+                <div class="title-wrapper" style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                  <div class="icon-box" style="background: var(--border-gradient-onyx); width: 45px; height: 45px; border-radius: 12px; display: flex; justify-content: center; align-items: center; color: var(--orange-yellow-crayola); box-shadow: var(--shadow-1); font-size: 20px;">
+                    <ion-icon name="people-outline"></ion-icon>
+                  </div>
+                  <h4 class="h4" data-i18n="skills_soft_title">Habilidades Blandas</h4>
                 </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 85%"></div>
-                </div>
-              </li>
+                <ul class="skills-list" style="display: flex; flex-direction: column; gap: 12px;">
+                  <li style="display: flex; align-items: center; gap: 12px;"><ion-icon name="checkmark-circle" style="color: var(--orange-yellow-crayola); font-size: 18px;"></ion-icon> <span data-i18n="skill_analytical" style="color: var(--light-gray); font-size: var(--fs-6);">Pensamiento Analítico</span></li>
+                  <li style="display: flex; align-items: center; gap: 12px;"><ion-icon name="checkmark-circle" style="color: var(--orange-yellow-crayola); font-size: 18px;"></ion-icon> <span data-i18n="skill_problem_solving" style="color: var(--light-gray); font-size: var(--fs-6);">Resolución de Problemas</span></li>
+                  <li style="display: flex; align-items: center; gap: 12px;"><ion-icon name="checkmark-circle" style="color: var(--orange-yellow-crayola); font-size: 18px;"></ion-icon> <span data-i18n="skill_persistence" style="color: var(--light-gray); font-size: var(--fs-6);">Persistencia</span></li>
+                  <li style="display: flex; align-items: center; gap: 12px;"><ion-icon name="checkmark-circle" style="color: var(--orange-yellow-crayola); font-size: 18px;"></ion-icon> <span data-i18n="skill_continuous_learning" style="color: var(--light-gray); font-size: var(--fs-6);">Aprendizaje Continuo</span></li>
+                  <li style="display: flex; align-items: center; gap: 12px;"><ion-icon name="checkmark-circle" style="color: var(--orange-yellow-crayola); font-size: 18px;"></ion-icon> <span data-i18n="skill_attention_detail" style="color: var(--light-gray); font-size: var(--fs-6);">Atención al Detalle</span></li>
+                </ul>
+              </div>
 
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5" data-i18n="skill_problem_solving">
-                    Resolución de Problemas
-                  </h5>
-                  <data value="90">90%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 90%"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5" data-i18n="skill_teamwork">
-                    Trabajo en Equipo
-                  </h5>
-                  <data value="95">95%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 95%"></div>
-                </div>
-              </li>
-            </ul>
+            </div>
           </section>
         </article>
 
@@ -738,14 +753,19 @@
               >
                 <article class="project-card">
                   <figure class="project-img">
-                    <img
-                      src="./assets/images/Cover.png"
-                      alt="Corazón del Saber"
-                      loading="lazy"
-                    />
+                    <div class="project-badge" data-i18n="status_in_progress" style="position: absolute; bottom: 15px; left: 15px; background: #F59E0B; color: #111827; padding: 5px 12px; border-radius: 6px; font-size: var(--fs-8); font-weight: var(--fw-600); z-index: 2; box-shadow: var(--shadow-1);">
+                      EN CURSO
+                    </div>
+                    <a href="project-corazon.html">
+                      <img
+                        src="./assets/images/Cover.png"
+                        alt="Corazón del Saber"
+                        loading="lazy"
+                      />
+                    </a>
                     <div class="project-actions">
                       <a
-                        href="https://github.com/tu-usuario/corazon-del-saber"
+                        href="https://github.com/Camil0Dev/Corazon-Del-Saber"
                         target="_blank"
                         class="action-btn"
                         title="GitHub"
@@ -792,7 +812,7 @@
                 </article>
               </li>
 
-              <!-- PROYECTO 2: DRUNK DRIVER -->
+              <!-- PROYECTO 2: RESCUE DEEPER -->
               <li
                 class="project-item active"
                 data-filter-item
@@ -800,11 +820,80 @@
               >
                 <article class="project-card">
                   <figure class="project-img">
-                    <img
-                      src="./assets/images/DrunkCover.png"
-                      alt="Drunk Driver"
-                      loading="lazy"
-                    />
+                    <div class="project-badge" data-i18n="status_completed" style="position: absolute; bottom: 15px; left: 15px; background: #10B981; color: #FFFFFF; padding: 5px 12px; border-radius: 6px; font-size: var(--fs-8); font-weight: var(--fw-600); z-index: 2; box-shadow: var(--shadow-1);">
+                      FINALIZADO
+                    </div>
+                    <a href="project-rescue.html">
+                      <img
+                        src="./assets/images/RescueCover.png"
+                        alt="Rescue Deeper"
+                        loading="lazy"
+                      />
+                    </a>
+                    <div class="project-actions">
+                      <a
+                        href="https://github.com/CamiBlackFire-Dev/GameJam2"
+                        target="_blank"
+                        class="action-btn"
+                        title="GitHub"
+                      >
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                    </div>
+                  </figure>
+                  <div class="project-body">
+                    <p
+                      class="project-meta"
+                      data-i18n="project_rescue_meta"
+                    >
+                      2026 • GAME JAM
+                    </p>
+                    <h3
+                      class="project-title"
+                      data-i18n="project_rescue_title"
+                    >
+                      Rescue Deeper
+                    </h3>
+                    <p
+                      class="project-description"
+                      data-i18n="project_rescue_desc"
+                    >
+                      Plataformas 2D en Unity. Destaca por físicas pulidas, coyote time y un sistema de iluminación dinámica.
+                    </p>
+                    <ul class="project-tags">
+                      <li>Unity 2D</li>
+                      <li>C#</li>
+                      <li>Game Feel</li>
+                      <li>URP</li>
+                    </ul>
+                    <a
+                      href="project-rescue.html"
+                      class="project-link"
+                      data-i18n="project_ver_detalles"
+                      >VER DETALLES →</a
+                    >
+                  </div>
+                </article>
+              </li>
+
+              <!-- PROYECTO 3: DRUNK DRIVER -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="gamejam"
+              >
+                <article class="project-card">
+                  <figure class="project-img">
+                    <div class="project-badge" data-i18n="status_completed" style="position: absolute; bottom: 15px; left: 15px; background: #10B981; color: #FFFFFF; padding: 5px 12px; border-radius: 6px; font-size: var(--fs-8); font-weight: var(--fw-600); z-index: 2; box-shadow: var(--shadow-1);">
+                      FINALIZADO
+                    </div>
+                    <a href="project-drunk.html">
+                      <img
+                        src="./assets/images/DrunkCover.png"
+                        alt="Drunk Driver"
+                        loading="lazy"
+                      />
+                    </a>
                     <div class="project-actions">
                       <a
                         href="https://github.com/MarianoMushy/Drunk-Driver"
@@ -865,20 +954,32 @@
             <h2 class="h2 article-title" data-i18n="contact_title">Contacto</h2>
           </header>
 
-          <section class="mapbox" data-mapbox>
-            <figure>
-              <!-- Mapa actualizado a Bogotá, Colombia -->
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.51641075674!2d-74.24789531551003!3d4.648283716942054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1ses!2sco!4v1700000000000!5m2!1ses!2sco"
-                width="400"
-                height="300"
-                loading="lazy"
-                style="border: 0"
-                allowfullscreen=""
-                aria-hidden="false"
-                tabindex="0"
-              ></iframe>
-            </figure>
+          <section class="contact-info-section" style="margin-bottom: 30px;">
+            <h3 class="h3 form-title" data-i18n="contact_invite_title" style="margin-bottom: 15px;">¡Hablemos!</h3>
+            <p class="contact-text" data-i18n="contact_invite_text" style="color: var(--light-gray); margin-bottom: 25px; line-height: 1.6; font-size: var(--fs-6);">
+              ¿Tienes un proyecto en mente, una oportunidad laboral o simplemente quieres hablar sobre desarrollo de videojuegos? No dudes en contactarme. Siempre estoy abierto a nuevos retos y colaboraciones.
+            </p>
+            
+            <ul class="contact-social-list" style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 20px;">
+              <li>
+                <a href="mailto:camilomoreno4283@hotmail.com" class="social-link" style="display: flex; align-items: center; gap: 10px; color: var(--orange-yellow-crayola); text-decoration: none; padding: 12px 18px; background: var(--eerie-black-1); border: 1px solid var(--jet); border-radius: 12px; font-size: var(--fs-6); transition: var(--transition-1);">
+                  <ion-icon name="mail-outline" style="font-size: 20px;"></ion-icon>
+                  camilomoreno4283@hotmail.com
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/camilo-moreno-unity-developer/" target="_blank" class="social-link" style="display: flex; align-items: center; gap: 10px; color: var(--orange-yellow-crayola); text-decoration: none; padding: 12px 18px; background: var(--eerie-black-1); border: 1px solid var(--jet); border-radius: 12px; font-size: var(--fs-6); transition: var(--transition-1);">
+                  <ion-icon name="logo-linkedin" style="font-size: 20px;"></ion-icon>
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/Camil0Dev" target="_blank" class="social-link" style="display: flex; align-items: center; gap: 10px; color: var(--orange-yellow-crayola); text-decoration: none; padding: 12px 18px; background: var(--eerie-black-1); border: 1px solid var(--jet); border-radius: 12px; font-size: var(--fs-6); transition: var(--transition-1);">
+                  <ion-icon name="logo-github" style="font-size: 20px;"></ion-icon>
+                  GitHub
+                </a>
+              </li>
+            </ul>
           </section>
 
           <section class="contact-form">
@@ -929,7 +1030,7 @@
               <input
                 type="hidden"
                 name="_next"
-                value="https://tu-usuario.github.io/"
+                value="https://Camil0Dev.github.io/"
               />
 
               <button class="form-btn" type="submit" disabled data-form-btn>

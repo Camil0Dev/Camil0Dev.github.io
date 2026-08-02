@@ -322,8 +322,8 @@ main {
   gap: 12px;
 }
 .avatar-box {
-  background: var(--bg-gradient-onyx);
-  border-radius: 16px;
+  background: transparent;
+  border-radius: 50%;
 }
 .avatar-box img {
   width: 60px;
@@ -396,6 +396,12 @@ main {
 .contact-info :is(.contact-link, time, address) {
   color: var(--white-2);
   font-size: 11px;
+  word-break: break-all;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.contact-info .contact-link:hover {
+  color: var(--orange-yellow-crayola);
+  text-shadow: 0 0 8px rgba(255, 219, 112, 0.4);
 }
 .contact-info address {
   font-style: normal;
@@ -463,10 +469,12 @@ main {
 }
 .navbar-link:hover,
 .navbar-link:focus {
-  color: var(--light-gray-70);
+  color: var(--orange-yellow-crayola);
+  text-shadow: 0 0 8px rgba(255, 219, 112, 0.5);
 }
 .navbar-link.active {
   color: var(--orange-yellow-crayola);
+  text-shadow: 0 0 10px rgba(255, 219, 112, 0.6);
 }
 
 /*-----------------------------------*\
@@ -951,7 +959,8 @@ main {
 
 .project-card:hover {
   transform: translateY(-6px);
-  box-shadow: var(--shadow-4);
+  box-shadow: 0 8px 25px rgba(255, 219, 112, 0.15);
+  border-color: rgba(255, 219, 112, 0.3);
 }
 
 .project-img {
@@ -1208,6 +1217,7 @@ textarea.form-input::-webkit-resizer {
 }
 .form-btn:hover {
   background: var(--bg-gradient-yellow-1);
+  box-shadow: 0 0 15px rgba(255, 219, 112, 0.3);
 }
 .form-btn:hover::before {
   background: var(--bg-gradient-yellow-2);
@@ -2024,3 +2034,35 @@ textarea.form-input::-webkit-resizer {
     max-width: 700px;
   }
 }
+/* Timeline Details */
+.timeline-details summary {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+}
+.timeline-details summary::-webkit-details-marker {
+  display: none;
+}
+.timeline-details summary .dropdown-icon {
+  position: absolute;
+  right: 0;
+  top: 6px;
+  font-size: 18px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  color: var(--orange-yellow-crayola);
+}
+.timeline-details[open] summary .dropdown-icon {
+  transform: rotate(180deg);
+}
+.timeline-details summary:hover .timeline-item-title {
+  color: var(--orange-yellow-crayola);
+  text-shadow: 0 0 10px rgba(255, 219, 112, 0.5);
+}
+.timeline-details p {
+  margin-top: 15px;
+}
+
