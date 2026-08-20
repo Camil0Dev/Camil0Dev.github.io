@@ -290,7 +290,8 @@
     "project_gg_herramienta_2": "Universal Render Pipeline (URP)",
     "project_gg_herramienta_3": "UI Toolkit (UI Builder, UXML, USS)",
     "project_gg_herramienta_4": "C# (.NET)",
-    "status_on_hold": "EN PAUSA"
+    "status_on_hold": "EN PAUSA",
+    "project_gg_meta_estado": "En Curso"
   },
   "en": {
     "name": "Camilo Moreno",
@@ -583,6 +584,7 @@
     "project_gg_herramienta_2": "Universal Render Pipeline (URP)",
     "project_gg_herramienta_3": "UI Toolkit (UI Builder, UXML, USS)",
     "project_gg_herramienta_4": "C# (.NET)",
-    "status_on_hold": "ON HOLD"
+    "status_on_hold": "ON HOLD",
+    "project_gg_meta_estado": "In Progress"
   }
 }
